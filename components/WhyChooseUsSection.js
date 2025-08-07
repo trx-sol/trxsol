@@ -26,7 +26,7 @@ export default function FAQSection() {
     {
       question: "Will my website be mobile-friendly?",
       answer:
-        "Absolutely! All our websites are built with a mobile-first approach. They're fully responsive and work perfectly on all devices - smartphones, tablets, and desktops. This is crucial for SEO and user experience.",
+        "Absolutely! All our websites are built with a mobile-first approach. They&apos;re fully responsive and work perfectly on all devices - smartphones, tablets, and desktops. This is crucial for SEO and user experience.",
     },
     {
       question: "Do you provide SEO services?",
@@ -36,7 +36,7 @@ export default function FAQSection() {
     {
       question: "What happens after the website is launched?",
       answer:
-        "After launch, we provide 1-3 months of free support and maintenance. We also offer ongoing maintenance packages that include updates, security monitoring, backups, and technical support. We're always here to help!",
+        "After launch, we provide 1-3 months of free support and maintenance. We also offer ongoing maintenance packages that include updates, security monitoring, backups, and technical support. We&apos;re always here to help!",
     },
     {
       question: "Can you redesign my existing website?",
@@ -69,8 +69,8 @@ export default function FAQSection() {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Everything you need to know about our website design and development
-            services. Can't find the answer you're looking for? Contact our
-            team.
+            services. Can&apos;t find the answer you&apos;re looking for?
+            Contact our team.
           </p>
         </div>
 

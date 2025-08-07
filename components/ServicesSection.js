@@ -227,7 +227,7 @@ export default function ServicesSection() {
               Ready to Get Started?
             </h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Let's discuss your project and create a website that drives
+              Let&apos;s discuss your project and create a website that drives
               results for your business.
             </p>
             <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">

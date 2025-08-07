@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "How do I get started with TRX Sol?",
     answer:
-      "Getting started is easy! Simply create a wallet, purchase TRX tokens, and you're ready to explore our DeFi ecosystem. Our user-friendly interface makes it simple for beginners and experts alike.",
+      "Getting started is easy! Simply create a wallet, purchase TRX tokens, and you&apos;re ready to explore our DeFi ecosystem. Our user-friendly interface makes it simple for beginners and experts alike.",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function FAQSection() {
           className="text-center mt-12"
         >
           <p className="text-gray-400 mb-6">
-            Still have questions? We're here to help!
+            Still have questions? We&apos;re here to help!
           </p>
           <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
             Contact Support

@@ -45,7 +45,7 @@ export default function ClientLogosSlider() {
             Trusted by Local Businesses
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            We've helped businesses across Uttam Nagar, Dwarka, and surrounding
+            We&apos;ve helped businesses across Uttam Nagar, Dwarka, and surrounding
             areas establish their powerful online presence
           </p>
         </div>

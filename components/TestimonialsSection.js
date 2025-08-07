@@ -13,7 +13,7 @@ export default function TestimonialsSection() {
       company: "Spice Garden, Uttam Nagar",
       avatar: "RK",
       content:
-        "TRX Sol transformed our restaurant's online presence completely. Our new website helped us increase online orders by 300% and we're now getting customers from all over Delhi NCR.",
+        "TRX Sol transformed our restaurant&apos;s online presence completely. Our new website helped us increase online orders by 300% and we&apos;re now getting customers from all over Delhi NCR.",
       rating: 5,
     },
     {
@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
       company: "Dream Homes, Dwarka",
       avatar: "AP",
       content:
-        "Our new website has been a game-changer for our real estate business. The SEO optimization helped us rank higher in local searches and we're getting more qualified leads than ever.",
+        "Our new website has been a game-changer for our real estate business. The SEO optimization helped us rank higher in local searches and we&apos;re getting more qualified leads than ever.",
       rating: 5,
     },
     {
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
       company: "FitLife Gym, Dwarka",
       avatar: "VS",
       content:
-        "The website TRX Sol built for our gym is amazing! It's fast, responsive, and has helped us attract more members. The team's support and maintenance service is excellent.",
+        "The website TRX Sol built for our gym is amazing! It&apos;s fast, responsive, and has helped us attract more members. The team&apos;s support and maintenance service is excellent.",
       rating: 5,
     },
   ];
@@ -95,7 +95,7 @@ export default function TestimonialsSection() {
 
                 {/* Content */}
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 {/* Author */}

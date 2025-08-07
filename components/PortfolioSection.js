@@ -94,8 +94,8 @@ export default function PortfolioSection() {
             </span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Explore our latest projects and see how we've helped businesses in
-            Delhi NCR achieve their digital goals.
+            Explore our latest projects and see how we&apos;ve helped businesses
+            in Delhi NCR achieve their digital goals.
           </p>
         </motion.div>
 

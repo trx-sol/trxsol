@@ -78,13 +78,13 @@ export default function ContactPage() {
       <PageHero
         title={
           <>
-            Let's Build Something{" "}
+            Let&apos;s Build Something{" "}
             <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
               Great
             </span>
           </>
         }
-        subtitle="Ready to transform your business online? Get in touch with us today and let's discuss your project."
+        subtitle="Ready to transform your business online? Get in touch with us today and let&apos;s discuss your project."
       />
 
       {/* Contact Information */}
@@ -175,8 +175,8 @@ export default function ContactPage() {
               </span>
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Tell us about your project requirements and we'll get back to you
-              with a detailed proposal.
+              Tell us about your project requirements and we&apos;ll get back to
+              you with a detailed proposal.
             </p>
           </motion.div>
 

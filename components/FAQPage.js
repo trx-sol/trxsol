@@ -111,7 +111,7 @@ export default function FAQPage() {
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-trx-purple/20 to-trx-cyan/20 border border-trx-purple/30">
             <HelpCircle className="w-4 h-4 text-trx-cyan mr-2" />
             <span className="text-sm font-medium text-white">
-              Got more questions? We're here to help!
+              Got more questions? We&apos;re here to help!
             </span>
           </div>
         </motion.div>
@@ -158,7 +158,7 @@ export default function FAQPage() {
               Why Choose <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">TRX Sol</span>
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              We're committed to delivering exceptional websites with outstanding service and support.
+              We&apos;re committed to delivering exceptional websites with outstanding service and support.
             </p>
           </motion.div>
 
@@ -201,7 +201,7 @@ export default function FAQPage() {
               Still Have Questions?
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              We're here to help! Contact us directly and we'll get back to you within 24 hours with a detailed response.
+              We&apos;re here to help! Contact us directly and we&apos;ll get back to you within 24 hours with a detailed response.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.div
@@ -227,7 +227,7 @@ export default function FAQPage() {
       {/* Contact Form */}
       <ContactForm
         title="Ready to Get Started?"
-        subtitle="Let's discuss your project and answer any remaining questions you might have."
+        subtitle="Let&apos;s discuss your project and answer any remaining questions you might have."
       />
     </div>
   );

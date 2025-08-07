@@ -341,7 +341,7 @@ export default function AboutPage() {
               </span>
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              We're not just another web development company. Here's what makes
+              We&apos;re not just another web development company. Here&apos;s what makes
               us different.
             </p>
           </motion.div>

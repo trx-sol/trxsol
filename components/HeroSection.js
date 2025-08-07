@@ -200,7 +200,7 @@ export default function HeroSection() {
               transition={{ duration: 0.3 }}
             >
               <blockquote className="text-lg lg:text-xl text-white font-medium italic text-center">
-                "A great business starts with a powerful online presence."
+                &ldquo;A great business starts with a powerful online presence.&rdquo;
               </blockquote>
             </motion.div>
 
@@ -259,7 +259,7 @@ export default function HeroSection() {
                   Get Your Free Quote
                 </CardTitle>
                 <p className="text-gray-400 text-sm lg:text-base">
-                  Tell us about your project and we'll get back to you within 24
+                  Tell us about your project and we&apos;ll get back to you within 24
                   hours
                 </p>
               </CardHeader>

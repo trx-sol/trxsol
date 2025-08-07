@@ -335,8 +335,9 @@ export default function PortfolioPage() {
               ?
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Let's discuss your project requirements and create something
-              amazing together. We're here to help bring your vision to life.
+              Let&apos;s discuss your project requirements and create something
+              amazing together. We&apos;re here to help bring your vision to
+              life.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
