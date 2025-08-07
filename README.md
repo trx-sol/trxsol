@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TRX Sol - Website Design & Development Agency
 
-## Getting Started
+A modern, futuristic website for TRX Sol - a professional website design and development agency based in Uttam Nagar & Dwarka, Delhi.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Dark Theme Design**: Sleek, minimalistic dark UI with gradient accents
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Modern Technologies**: Built with Next.js 14, React 18, and Tailwind CSS
+- **Component-Based Architecture**: Reusable components for maintainability
+- **SEO Optimized**: Meta tags, structured data, and performance optimized
+- **Smooth Animations**: Hover effects, transitions, and micro-interactions
+- **Glassmorphism Effects**: Modern glass-like UI elements
+- **React Icons**: Beautiful icons from react-icons library
+
+## 🎨 Design System
+
+### Colors
+- **Primary Background**: `#0D0D0D` (Dark)
+- **Text**: `#FFFFFF` (White)
+- **Accent Blue**: `#643BD4` (Purple)
+- **Accent Cyan**: `#00C2FF` (Cyan)
+- **Gray**: `#B0B0B0` (Light Gray)
+
+### Typography
+- **Headings**: Sora (Bold, Modern)
+- **Body**: Inter (Clean, Readable)
+- **Accent**: Space Grotesk (Futuristic)
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── globals.css          # Global styles and utilities
+│   ├── layout.js            # Root layout with metadata
+│   └── page.js              # Main homepage
+├── components/
+│   ├── Navigation.js        # Header navigation component
+│   ├── HeroSection.js       # Hero section with CTA
+│   ├── ServicesSection.js   # Services grid
+│   ├── PortfolioSection.js  # Project showcase
+│   ├── WhyChooseUsSection.js # Features section
+│   ├── TestimonialsSection.js # Client testimonials
+│   ├── PricingSection.js    # Pricing plans
+│   ├── CTASection.js        # Call-to-action section
+│   ├── BlogPreviewSection.js # Blog preview cards
+│   └── Footer.js            # Footer with links
+├── public/
+│   └── icon.svg             # Favicon
+└── tailwind.config.js       # Tailwind configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Components
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Navigation
+- Fixed header with glassmorphism effect
+- Mobile-responsive hamburger menu
+- Smooth scroll navigation links
+- TRX Sol branding with gradient text
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Hero Section
+- Bold headline with gradient text
+- Animated code background
+- Dual CTA buttons (Portfolio & Quote)
+- Location and tech stack information
 
-## Learn More
+### Services Section
+- 6 service cards with icons
+- Hover effects with scaling and shadows
+- React Icons integration
+- Glassmorphism design
 
-To learn more about Next.js, take a look at the following resources:
+### Portfolio Section
+- Project showcase with hover overlays
+- Technology tags for each project
+- Live demo and tech used buttons
+- Responsive grid layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Why Choose Us
+- 6 feature cards with icons
+- Hover animations and color transitions
+- Local Delhi focus messaging
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Testimonials
+- Client review cards with star ratings
+- Hover effects and transitions
+- Professional client testimonials
 
-## Deploy on Vercel
+### Pricing Plans
+- 3-tier pricing structure
+- Popular plan highlighting
+- Feature lists with checkmarks
+- Gradient CTA buttons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### CTA Section
+- Strong call-to-action messaging
+- Contact information cards
+- Phone and email integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Blog Preview
+- 3 blog post previews
+- Category tags and read times
+- Author and date information
+- "View All Posts" button
+
+### Footer
+- 4-column layout with company info
+- Social media links
+- Quick links and services
+- Contact information
+- Local service area mention
+
+## 🚀 Getting Started
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open Browser**
+   Navigate to `http://localhost:3000`
+
+## 📱 Responsive Design
+
+- **Mobile**: Optimized for phones (320px+)
+- **Tablet**: Responsive layout for tablets (768px+)
+- **Desktop**: Full desktop experience (1024px+)
+
+## 🎯 Performance Features
+
+- **Next.js 14**: App Router for optimal performance
+- **Tailwind CSS**: Utility-first CSS framework
+- **React Icons**: Lightweight icon library
+- **Optimized Images**: Responsive image handling
+- **Smooth Scrolling**: Enhanced user experience
+- **Custom Scrollbar**: Branded scrollbar design
+
+## 🔧 Customization
+
+### Colors
+Update the color scheme in `tailwind.config.js`:
+```javascript
+colors: {
+  "trx-bg": "#0D0D0D",
+  "trx-text": "#FFFFFF",
+  "trx-cyan": "#00C2FF",
+  "trx-blue": "#643BD4",
+  "trx-gray": "#B0B0B0",
+}
+```
+
+### Content
+- Update component data arrays for services, projects, testimonials
+- Modify contact information in components
+- Customize pricing plans and features
+
+### Styling
+- Adjust glassmorphism effects in `globals.css`
+- Modify gradient colors and animations
+- Update typography and spacing
+
+## 📞 Contact Information
+
+- **Phone**: +91 98765 43210
+- **Email**: hello@trxsol.com
+- **Location**: Uttam Nagar & Dwarka, Delhi
+- **Service Areas**: Delhi NCR
+
+## 🎨 Design Inspiration
+
+This website design is inspired by modern tech companies and agencies, featuring:
+- Dark theme with gradient accents
+- Glassmorphism and neumorphism effects
+- Clean typography and spacing
+- Smooth animations and transitions
+- Professional and trustworthy appearance
+
+## 📄 License
+
+This project is created for TRX Sol agency. All rights reserved.
+
+---
+
+**Built with ❤️ by TRX Sol Team**
