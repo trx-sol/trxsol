@@ -41,7 +41,7 @@ export default function FAQSection() {
     {
       question: "Can you redesign my existing website?",
       answer:
-        "Yes, we specialize in website redesigns! We can modernize your existing website, improve its performance, and enhance user experience. We'll analyze your current site and provide recommendations for improvement.",
+        "Yes, we specialize in website redesigns! We can modernize your existing website, improve its performance, and enhance user experience. We&apos;ll analyze your current site and provide recommendations for improvement.",
     },
     {
       question: "Do you provide training for managing the website?",
@@ -56,7 +56,7 @@ export default function FAQSection() {
     {
       question: "Do you work with clients outside Uttam Nagar and Dwarka?",
       answer:
-        "Yes, we work with clients across Delhi NCR and beyond. While we're based in Uttam Nagar and Dwarka, we can serve clients anywhere through online consultations, video calls, and remote project management.",
+        "Yes, we work with clients across Delhi NCR and beyond. While we&apos;re based in Uttam Nagar and Dwarka, we can serve clients anywhere through online consultations, video calls, and remote project management.",
     },
   ];
 
