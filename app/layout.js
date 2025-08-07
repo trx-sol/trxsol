@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
 export const metadata = {
   title:
@@ -32,7 +33,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }

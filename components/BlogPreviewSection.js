@@ -153,33 +153,6 @@ export default function BlogPreviewSection() {
             </Card>
           ))}
         </div>
-
-        {/* Newsletter Signup */}
-        <div className="text-center">
-          <div className="glass-effect rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
-            <TrendingUp className="w-12 h-12 text-trx-cyan mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Stay Updated with Web Trends
-            </h3>
-            <p className="text-gray-400 mb-6">
-              Get the latest insights, tips, and trends delivered to your inbox
-              weekly.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-black/30 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-trx-cyan"
-              />
-              <Button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white border-0">
-                Subscribe
-              </Button>
-            </div>
-            <p className="text-gray-500 text-sm mt-4">
-              No spam, unsubscribe at any time.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

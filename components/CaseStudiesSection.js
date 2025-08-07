@@ -8,7 +8,7 @@ import {
 } from "./ui/card";
 import { ArrowRight, Palette, Code, Smartphone, Zap } from "lucide-react";
 
-export default function HowItWorksSection() {
+export default function CaseStudiesSection() {
   const steps = [
     {
       step: "01",

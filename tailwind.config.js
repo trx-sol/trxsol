@@ -26,15 +26,15 @@ module.exports = {
   				'sans-serif'
   			]
   		},
-  				colors: {
-			'trx-bg': '#000000',
-			'trx-text': '#FFFFFF',
-			'trx-cyan': '#00C2FF',
-			'trx-purple': '#643BD4',
-			'trx-teal': '#10B981',
-			'trx-blue': '#3B82F6',
-			'trx-gray': '#B0B0B0',
-			'trx-gradient': 'linear-gradient(135deg, #643BD4 0%, #00C2FF 100%)',
+  		colors: {
+  			'trx-bg': '#000000',
+  			'trx-text': '#FFFFFF',
+  			'trx-cyan': '#00C2FF',
+  			'trx-purple': '#643BD4',
+  			'trx-teal': '#10B981',
+  			'trx-blue': '#3B82F6',
+  			'trx-gray': '#B0B0B0',
+  			'trx-gradient': 'linear-gradient(135deg, #643BD4 0%, #00C2FF 100%)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -94,6 +94,8 @@ module.exports = {
   			'logo-slide': 'logoSlide 20s linear infinite',
   			'gradient-shift': 'gradientShift 15s ease infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		keyframes: {
@@ -148,6 +150,22 @@ module.exports = {
   				},
   				'100%': {
   					backgroundPosition: '0% 50%'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
   				}
   			},
   			'accordion-down': {

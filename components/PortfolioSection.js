@@ -1,133 +1,153 @@
-import { FiExternalLink, FiEye } from 'react-icons/fi';
+"use client";
+import { motion } from "framer-motion";
+import PortfolioCard from "./PortfolioCard";
 
 export default function PortfolioSection() {
   const projects = [
     {
-      title: "E-commerce Platform",
+      id: 1,
+      title: "E-commerce Website for Fashion Brand",
+      description:
+        "A modern, responsive e-commerce platform with advanced product filtering, secure payment integration, and mobile-first design.",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       category: "E-commerce",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
-      tools: ["Next.js", "Stripe", "Tailwind"],
-      liveUrl: "#",
-      demoUrl: "#",
+      featured: true,
+      link: "#",
     },
     {
-      title: "Corporate Website",
+      id: 2,
+      title: "Restaurant Management System",
+      description:
+        "Complete restaurant management solution with online ordering, table reservations, and inventory management.",
+      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
       category: "Business",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-      tools: ["React", "Node.js", "MongoDB"],
-      liveUrl: "#",
-      demoUrl: "#",
+      featured: false,
+      link: "#",
     },
     {
-      title: "Restaurant Booking",
-      category: "Food & Beverage",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop",
-      tools: ["Next.js", "Prisma", "PostgreSQL"],
-      liveUrl: "#",
-      demoUrl: "#",
-    },
-    {
-      title: "Educational Platform",
-      category: "Education",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
-      tools: ["React", "Firebase", "Material-UI"],
-      liveUrl: "#",
-      demoUrl: "#",
-    },
-    {
-      title: "Real Estate Portal",
+      id: 3,
+      title: "Real Estate Agency Website",
+      description:
+        "Professional real estate website with property listings, search functionality, and lead generation forms.",
+      technologies: ["React", "Tailwind CSS", "Firebase", "Google Maps"],
       category: "Real Estate",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
-      tools: ["Next.js", "Supabase", "Tailwind"],
-      liveUrl: "#",
-      demoUrl: "#",
+      featured: false,
+      link: "#",
     },
     {
-      title: "Healthcare App",
+      id: 4,
+      title: "Educational Platform",
+      description:
+        "Online learning platform with video courses, progress tracking, and interactive assessments.",
+      technologies: ["Vue.js", "Laravel", "MySQL", "AWS"],
+      category: "Education",
+      featured: true,
+      link: "#",
+    },
+    {
+      id: 5,
+      title: "Healthcare Appointment System",
+      description:
+        "Patient appointment booking system with doctor profiles, scheduling, and telemedicine integration.",
+      technologies: ["React Native", "Node.js", "MongoDB", "Twilio"],
       category: "Healthcare",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
-      tools: ["React Native", "Node.js", "MongoDB"],
-      liveUrl: "#",
-      demoUrl: "#",
+      featured: false,
+      link: "#",
+    },
+    {
+      id: 6,
+      title: "Portfolio Website for Creative Agency",
+      description:
+        "Stunning portfolio website showcasing creative work with smooth animations and modern design.",
+      technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "Vercel"],
+      category: "Portfolio",
+      featured: false,
+      link: "#",
     },
   ];
 
-  return (
-    <section id="portfolio" className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Work</h2>
-          <p className="text-xl text-trx-gray max-w-2xl mx-auto">
-            Showcasing our latest projects and success stories
-          </p>
-        </div>
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.1,
+      },
+    },
+  };
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-xl glass-effect hover:scale-105 transition-all duration-300"
-            >
-              <div className="aspect-video bg-gradient-to-br from-trx-blue/20 to-trx-cyan/20 flex items-center justify-center relative overflow-hidden">
-                <div className="text-center z-10">
-                  <div className="text-4xl mb-2">🚀</div>
-                  <div className="text-sm text-trx-gray">
-                    {project.category}
-                  </div>
-                </div>
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-trx-bg/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.liveUrl}
-                      className="gradient-bg text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity flex items-center"
-                    >
-                      <FiEye className="mr-2" />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.demoUrl}
-                      className="border border-trx-cyan text-trx-cyan px-4 py-2 rounded-lg text-sm font-medium hover:bg-trx-cyan hover:text-trx-bg transition-colors flex items-center"
-                    >
-                      <FiExternalLink className="mr-2" />
-                      Tech Used
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 group-hover:text-trx-cyan transition-colors">
-                  {project.title}
-                </h3>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tools.map((tool, toolIndex) => (
-                    <span
-                      key={toolIndex}
-                      className="text-xs bg-trx-blue/20 text-trx-cyan px-2 py-1 rounded"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex space-x-2">
-                  <a
-                    href={project.liveUrl}
-                    className="flex-1 gradient-bg text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity flex items-center justify-center"
-                  >
-                    <FiEye className="mr-2" />
-                    View Live
-                  </a>
-                  <a
-                    href={project.demoUrl}
-                    className="flex-1 border border-trx-cyan text-trx-cyan py-2 rounded-lg text-sm font-medium hover:bg-trx-cyan hover:text-trx-bg transition-colors flex items-center justify-center"
-                  >
-                    <FiExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
+  return (
+    <section className="py-20 bg-black">
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Our{" "}
+            <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+              Portfolio
+            </span>
+          </h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Explore our latest projects and see how we've helped businesses in
+            Delhi NCR achieve their digital goals.
+          </p>
+        </motion.div>
+
+        {/* Portfolio Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {projects.map((project) => (
+            <PortfolioCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+              category={project.category}
+              featured={project.featured}
+              link={project.link}
+            />
           ))}
-        </div>
+        </motion.div>
+
+        {/* View All Projects Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:shadow-trx-cyan/25 transition-all duration-300"
+          >
+            View All Projects
+            <svg
+              className="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
