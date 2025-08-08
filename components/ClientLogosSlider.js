@@ -7,23 +7,15 @@ export default function ClientLogosSlider() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById("client-logos");
-    if (element) {
-      observer.observe(element);
-    }
+    const el = document.getElementById("client-logos");
+    if (el) observer.observe(el);
 
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
+    return () => el && observer.unobserve(el);
   }, []);
 
   const logos = [
@@ -38,50 +30,39 @@ export default function ClientLogosSlider() {
   ];
 
   return (
-    <section className="py-16 bg-black/50 border-y border-white/10">
+    <section className="py-20 bg-gradient-to-b from-black via-black/90 to-black border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight">
             Trusted by Local Businesses
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            We&apos;ve helped businesses across Uttam Nagar, Dwarka, and surrounding
-            areas establish their powerful online presence
+          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+            Empowering brands across Uttam Nagar, Dwarka, and beyond to grow
+            their online presence.
           </p>
         </div>
 
+        {/* Logo Slider */}
         <div
           id="client-logos"
           className={`relative overflow-hidden ${
             isVisible ? "animate-fade-in" : "opacity-0"
           }`}
         >
-          <div className="flex space-x-16 animate-logo-slide">
-            {/* First set of logos */}
-            {logos.map((logo, index) => (
+          <div className="flex space-x-10 md:space-x-16 animate-logo-slide">
+            {[...logos, ...logos].map((logo, index) => (
               <div
-                key={`first-${index}`}
+                key={index}
                 className="flex-shrink-0 flex items-center justify-center"
               >
-                <div className="glass-effect rounded-lg px-6 py-4 min-w-[120px] text-center">
-                  <div className="text-white font-bold text-lg">
+                <div className="glass-effect rounded-xl px-6 py-5 min-w-[120px] md:min-w-[160px] text-center hover:scale-105 hover:shadow-lg transition-all duration-300">
+                  <div className="text-white font-semibold text-sm md:text-lg uppercase tracking-wide">
                     {logo.logo}
                   </div>
-                  <div className="text-gray-400 text-xs mt-1">{logo.name}</div>
-                </div>
-              </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {logos.map((logo, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex-shrink-0 flex items-center justify-center"
-              >
-                <div className="glass-effect rounded-lg px-6 py-4 min-w-[120px] text-center">
-                  <div className="text-white font-bold text-lg">
-                    {logo.logo}
+                  <div className="text-gray-400 text-[10px] md:text-xs mt-1">
+                    {logo.name}
                   </div>
-                  <div className="text-gray-400 text-xs mt-1">{logo.name}</div>
                 </div>
               </div>
             ))}
@@ -89,31 +70,22 @@ export default function ClientLogosSlider() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              500+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-16">
+          {[
+            { value: "500+", label: "Websites Delivered" },
+            { value: "98%", label: "Client Satisfaction" },
+            { value: "5+", label: "Years Experience" },
+            { value: "24/7", label: "Support Available" },
+          ].map((stat, i) => (
+            <div key={i} className="text-center">
+              <div className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+                {stat.value}
+              </div>
+              <div className="text-gray-400 text-sm md:text-base">
+                {stat.label}
+              </div>
             </div>
-            <div className="text-gray-400">Websites Delivered</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              98%
-            </div>
-            <div className="text-gray-400">Client Satisfaction</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              5+
-            </div>
-            <div className="text-gray-400">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              24/7
-            </div>
-            <div className="text-gray-400">Support Available</div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

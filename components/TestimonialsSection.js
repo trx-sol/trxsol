@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Card, CardContent } from "./ui/card";
+import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
 
 export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,7 +14,7 @@ export default function TestimonialsSection() {
       company: "Spice Garden, Uttam Nagar",
       avatar: "RK",
       content:
-        "TRX Sol transformed our restaurant&apos;s online presence completely. Our new website helped us increase online orders by 300% and we&apos;re now getting customers from all over Delhi NCR.",
+        "TRX Sol transformed our restaurant's online presence completely. Our new website helped us increase online orders by 300% and we’re now getting customers from all over Delhi NCR.",
       rating: 5,
     },
     {
@@ -31,7 +32,7 @@ export default function TestimonialsSection() {
       company: "Dream Homes, Dwarka",
       avatar: "AP",
       content:
-        "Our new website has been a game-changer for our real estate business. The SEO optimization helped us rank higher in local searches and we&apos;re getting more qualified leads than ever.",
+        "Our new website has been a game-changer for our real estate business. The SEO optimization helped us rank higher in local searches and we’re getting more qualified leads than ever.",
       rating: 5,
     },
     {
@@ -49,108 +50,121 @@ export default function TestimonialsSection() {
       company: "FitLife Gym, Dwarka",
       avatar: "VS",
       content:
-        "The website TRX Sol built for our gym is amazing! It&apos;s fast, responsive, and has helped us attract more members. The team&apos;s support and maintenance service is excellent.",
+        "The website TRX Sol built for our gym is amazing! It’s fast, responsive, and has helped us attract more members. The team’s support and maintenance service is excellent.",
       rating: 5,
     },
   ];
 
   return (
-    <section className="py-20 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            What Our <span className="gradient-text">Clients Say</span>
+    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            What Our{" "}
+            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+              Clients Say
+            </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
             Hear from local businesses in Uttam Nagar and Dwarka who have
             transformed their online presence with TRX Sol.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {/* Testimonials */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <Card
+            <motion.div
               key={index}
-              className={`glass-effect border-white/10 hover-lift transition-all duration-300 ${
-                index === activeIndex
-                  ? "ring-2 ring-trx-cyan ring-opacity-50"
-                  : ""
-              }`}
-              onClick={() => setActiveIndex(index)}
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
             >
-              <CardContent className="p-6">
-                {/* Quote Icon */}
-                <Quote className="w-8 h-8 text-trx-cyan mb-4" />
+              <Card
+                onClick={() => setActiveIndex(index)}
+                className={`bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg hover:shadow-trx-cyan/20 transition-all duration-300 cursor-pointer ${
+                  index === activeIndex ? "ring-2 ring-trx-cyan/60" : ""
+                }`}
+              >
+                <CardContent className="p-6 flex flex-col h-full">
+                  <Quote className="w-8 h-8 text-trx-cyan mb-4" />
 
-                {/* Rating */}
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 text-yellow-400 fill-current"
-                    />
-                  ))}
-                </div>
-
-                {/* Content */}
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  &ldquo;{testimonial.content}&rdquo;
-                </p>
-
-                {/* Author */}
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                    {testimonial.avatar}
+                  {/* Rating */}
+                  <div className="flex items-center mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 text-yellow-400 fill-current"
+                      />
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-white font-semibold">
-                      {testimonial.name}
+
+                  {/* Content */}
+                  <p className="text-gray-300 mb-6 leading-relaxed flex-grow">
+                    “{testimonial.content}”
+                  </p>
+
+                  {/* Author */}
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-full flex items-center justify-center text-white font-semibold mr-4 shadow-lg">
+                      {testimonial.avatar}
                     </div>
-                    <div className="text-gray-400 text-sm">
-                      {testimonial.role}
-                    </div>
-                    <div className="text-trx-cyan text-sm">
-                      {testimonial.company}
+                    <div>
+                      <div className="text-white font-semibold">
+                        {testimonial.name}
+                      </div>
+                      <div className="text-gray-400 text-sm">
+                        {testimonial.role}
+                      </div>
+                      <div className="text-trx-cyan text-sm">
+                        {testimonial.company}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              500+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16"
+        >
+          {[
+            { value: "500+", label: "Happy Clients" },
+            { value: "4.9/5", label: "Client Rating" },
+            { value: "98%", label: "Satisfaction Rate" },
+            { value: "24/7", label: "Support Available" },
+          ].map((stat, i) => (
+            <div key={i}>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent mb-2">
+                {stat.value}
+              </div>
+              <div className="text-gray-400">{stat.label}</div>
             </div>
-            <div className="text-gray-400">Happy Clients</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              4.9/5
-            </div>
-            <div className="text-gray-400">Client Rating</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              98%
-            </div>
-            <div className="text-gray-400">Satisfaction Rate</div>
-          </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-              24/7
-            </div>
-            <div className="text-gray-400">Support Available</div>
-          </div>
-        </div>
+          ))}
+        </motion.div>
 
         {/* CTA */}
-        <div className="text-center mt-16">
-          <div className="glass-effect rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">
               Join Our Happy Clients
             </h3>
@@ -162,7 +176,7 @@ export default function TestimonialsSection() {
               Get Free Quote
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

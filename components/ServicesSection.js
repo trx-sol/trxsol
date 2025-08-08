@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import {
   Card,
@@ -15,10 +16,10 @@ import {
   Smartphone,
   ShoppingCart,
   Settings,
-  Zap,
   Shield,
   TrendingUp,
   Users,
+  Zap,
 } from "lucide-react";
 
 export default function ServicesSection() {
@@ -30,11 +31,11 @@ export default function ServicesSection() {
         icon: Palette,
         title: "Custom Website Design",
         description:
-          "Unique, modern designs that perfectly represent your brand and engage your audience.",
+          "Unique, modern designs that represent your brand and engage your audience.",
         features: [
           "Responsive design",
           "Brand integration",
-          "User experience focus",
+          "User-friendly",
           "Modern aesthetics",
         ],
       },
@@ -42,7 +43,7 @@ export default function ServicesSection() {
         icon: Code,
         title: "Web Development",
         description:
-          "Fast, secure, and scalable websites built with the latest technologies and best practices.",
+          "Fast, secure, and scalable websites using the latest technologies.",
         features: [
           "Next.js & React",
           "Performance optimized",
@@ -53,8 +54,7 @@ export default function ServicesSection() {
       {
         icon: Smartphone,
         title: "Mobile-First Design",
-        description:
-          "Websites that look and work perfectly on all devices, from mobile phones to desktops.",
+        description: "Flawless performance and visuals across all devices.",
         features: [
           "Mobile responsive",
           "Touch-friendly",
@@ -67,20 +67,18 @@ export default function ServicesSection() {
       {
         icon: Search,
         title: "SEO Optimization",
-        description:
-          "Improve your search engine rankings and drive more organic traffic to your website.",
+        description: "Boost your rankings and get more organic traffic.",
         features: [
           "Keyword optimization",
           "Technical SEO",
           "Local SEO",
-          "Performance optimization",
+          "Performance tuning",
         ],
       },
       {
         icon: TrendingUp,
         title: "Digital Marketing",
-        description:
-          "Comprehensive digital marketing strategies to grow your online presence and reach.",
+        description: "Grow your online presence with tailored strategies.",
         features: [
           "Social media marketing",
           "Content marketing",
@@ -91,12 +89,11 @@ export default function ServicesSection() {
       {
         icon: Users,
         title: "Social Media Management",
-        description:
-          "Professional social media management to build your brand and engage with customers.",
+        description: "Build your brand and engage effectively.",
         features: [
           "Content creation",
           "Community management",
-          "Paid advertising",
+          "Paid ads",
           "Performance reports",
         ],
       },
@@ -106,7 +103,7 @@ export default function ServicesSection() {
         icon: ShoppingCart,
         title: "E-Commerce Solutions",
         description:
-          "Complete online store solutions to sell your products and services online.",
+          "Complete online store solutions to sell products & services.",
         features: [
           "Payment integration",
           "Inventory management",
@@ -117,24 +114,22 @@ export default function ServicesSection() {
       {
         icon: Settings,
         title: "Website Maintenance",
-        description:
-          "Ongoing support and maintenance to keep your website secure, fast, and up-to-date.",
+        description: "Keep your site secure, fast, and up-to-date.",
         features: [
           "Regular updates",
           "Security monitoring",
-          "Backup services",
+          "Backups",
           "Performance optimization",
         ],
       },
       {
         icon: Shield,
         title: "Security & Hosting",
-        description:
-          "Secure hosting solutions with SSL certificates and regular security updates.",
+        description: "Reliable hosting with top-notch security.",
         features: [
           "SSL certificates",
           "Daily backups",
-          "Security monitoring",
+          "Monitoring",
           "24/7 support",
         ],
       },
@@ -142,57 +137,62 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="features" className="py-20 bg-black">
+    <section
+      id="features"
+      className="py-20 bg-gradient-to-b from-black via-black/90 to-black"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Comprehensive website design and development services to help your
-            business establish a powerful online presence in Uttam Nagar,
-            Dwarka, and beyond.
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            End-to-end web solutions for businesses in Uttam Nagar, Dwarka, and
+            beyond.
           </p>
         </div>
 
+        {/* Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 bg-black/50 border border-white/10 mb-12">
+          <TabsList className="flex flex-wrap justify-center gap-2 bg-black/40  p-2 rounded-xl backdrop-blur-sm mb-12">
             <TabsTrigger
               value="design"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan data-[state=active]:text-white"
+              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
             >
               <Palette className="w-4 h-4 mr-2" />
               Design & Development
             </TabsTrigger>
             <TabsTrigger
               value="marketing"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan data-[state=active]:text-white"
+              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
             >
               <Search className="w-4 h-4 mr-2" />
               Marketing & SEO
             </TabsTrigger>
             <TabsTrigger
               value="business"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan data-[state=active]:text-white"
+              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
             >
               <Settings className="w-4 h-4 mr-2" />
               Business Solutions
             </TabsTrigger>
           </TabsList>
 
+          {/* Service Cards */}
           {Object.entries(services).map(([category, categoryServices]) => (
-            <TabsContent key={category} value={category} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <TabsContent key={category} value={category}>
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {categoryServices.map((service, index) => (
                   <Card
                     key={index}
-                    className="glass-effect border-white/10 hover-lift group"
+                    className="glass-effect border-white/10 hover:border-trx-cyan/50 hover:shadow-lg hover:shadow-trx-cyan/20 transition-all duration-300 group"
                   >
-                    <CardHeader className="pb-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <CardHeader>
+                      <div className="w-14 h-14 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <service.icon className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-white text-xl">
+                      <CardTitle className="text-white text-lg md:text-xl">
                         {service.title}
                       </CardTitle>
                       <CardDescription className="text-gray-400">
@@ -219,18 +219,17 @@ export default function ServicesSection() {
           ))}
         </Tabs>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="glass-effect rounded-2xl p-8 border border-white/10">
+        {/* CTA */}
+        <div className="text-center mt-20">
+          <div className="glass-effect rounded-2xl p-10 border border-white/10 max-w-3xl mx-auto">
             <Zap className="w-12 h-12 text-trx-cyan mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Get Started?
             </h3>
-            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Let&apos;s discuss your project and create a website that drives
-              results for your business.
+            <p className="text-gray-400 mb-6">
+              Let's create a website that drives results for your business.
             </p>
-            <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+            <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-transform duration-300 hover:scale-105">
               Get Free Consultation
             </button>
           </div>

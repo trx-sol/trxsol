@@ -1,7 +1,7 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { Zap, Shield, Globe, Users, TrendingUp, Lock } from "lucide-react";
-import { Section } from "./Section";
 
 const steps = [
   {
@@ -50,90 +50,67 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <Section className="py-20 bg-gradient-to-b from-black to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            How TRX Sol Works
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            How{" "}
+            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+              TRX Sol
+            </span>{" "}
+            Works
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience the future of blockchain technology with our
-            revolutionary platform that combines speed, security, and
-            scalability
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+            From secure setup to governance — everything simplified and
+            beautifully designed.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
+        {/* Cards Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {steps.map((step, i) => (
             <motion.div
-              key={index}
+              key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className="relative p-6 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-trx-cyan hover:shadow-lg hover:shadow-trx-cyan/20 transition-all duration-300"
             >
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-trx-cyan/50 transition-all duration-300 hover:transform hover:scale-105">
-                <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r from-trx-purple to-trx-cyan mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <step.icon className="w-8 h-8 text-white" />
-                </div>
-
-                <h3 className="text-xl font-bold text-white mb-4">
-                  {step.title}
-                </h3>
-
-                <p className="text-gray-300 leading-relaxed">
-                  {step.description}
-                </p>
-
-                <div className="mt-6 flex items-center text-trx-cyan font-semibold">
-                  <span>Learn More</span>
-                  <motion.div
-                    className="ml-2"
-                    initial={{ x: 0 }}
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    →
-                  </motion.div>
-                </div>
+              {/* Icon */}
+              <div
+                className={`w-14 h-14 rounded-xl bg-gradient-to-r ${step.color} flex items-center justify-center mb-5 shadow-lg`}
+              >
+                <step.icon className="text-white w-7 h-7" />
               </div>
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-white mb-3">
+                {step.title}
+              </h3>
+              {/* Description */}
+              <p className="text-gray-400 text-sm">{step.description}</p>
             </motion.div>
           ))}
         </div>
 
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="text-center mt-14"
         >
-          <div className="bg-gradient-to-r from-trx-purple/20 to-trx-cyan/20 rounded-2xl p-8 border border-trx-purple/30">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Get Started?
-            </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Join thousands of users who are already experiencing the future of
-              blockchain technology with TRX Sol
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
-                Start Trading
-              </button>
-              <button className="border border-trx-cyan text-trx-cyan hover:bg-trx-cyan hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105">
-                View Documentation
-              </button>
-            </div>
-          </div>
+          <button className="bg-gradient-to-r from-trx-purple to-trx-cyan text-white px-8 py-3 rounded-lg font-semibold transition-transform hover:scale-105 shadow-lg hover:shadow-trx-cyan/30">
+            Start Trading
+          </button>
         </motion.div>
       </div>
-    </Section>
+    </section>
   );
 }

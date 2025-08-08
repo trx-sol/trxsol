@@ -43,146 +43,92 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Brand Section */}
+    <footer className="relative bg-gradient-to-b from-black via-gray-900 to-black border-t border-white/10 backdrop-blur-xl">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        {/* Top Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+          {/* Brand Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-lg flex items-center justify-center">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-lg flex items-center justify-center shadow-lg shadow-trx-cyan/30">
                 <span className="text-white font-bold text-sm">TRX</span>
               </div>
-              <span className="text-white font-bold text-xl">TRX Sol</span>
+              <span className="text-white font-bold text-2xl tracking-wide">
+                TRX Sol
+              </span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              Professional website design and development company serving Uttam
-              Nagar, Dwarka, and Delhi NCR. We create powerful online presences
-              for businesses.
+            <p className="text-gray-400 leading-relaxed mb-6">
+              Premium website design and development company in Uttam Nagar,
+              Dwarka, and Delhi NCR. We craft fast, modern, and impactful online
+              experiences for businesses.
             </p>
 
-            {/* Contact Info */}
+            {/* Contact */}
             <div className="space-y-2 mb-6">
-              <div className="flex items-center text-gray-400 text-sm">
+              <div className="flex items-center text-gray-400 text-sm hover:text-white transition">
                 <Mail className="w-4 h-4 mr-2" />
                 hello@trxsol.com
               </div>
-              <div className="flex items-center text-gray-400 text-sm">
+              <div className="flex items-center text-gray-400 text-sm hover:text-white transition">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 +91 98765 43210
               </div>
             </div>
 
-            {/* Social Links */}
+            {/* Social */}
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-white/5 hover:bg-gradient-to-r hover:from-trx-purple hover:to-trx-cyan rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
+                  className="group w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center 
+                  hover:bg-gradient-to-r hover:from-trx-purple hover:to-trx-cyan 
+                  transition-all duration-300 shadow-md hover:shadow-trx-cyan/20"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Services Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-trx-cyan transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-trx-cyan transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Support</h3>
-            <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-trx-cyan transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-trx-cyan transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Link Sections */}
+          {Object.entries(footerLinks).map(([section, links]) => (
+            <div key={section}>
+              <h3 className="text-white font-semibold mb-4 capitalize">
+                {section}
+              </h3>
+              <ul className="space-y-3">
+                {links.map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.href}
+                      className="text-gray-400 hover:text-trx-cyan transition-colors duration-200"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-white/10 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} TRX Sol. All rights reserved. | Serving Uttam
-              Nagar, Dwarka & Delhi NCR
-            </div>
-
-            <div className="flex items-center space-x-6 text-sm">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-trx-cyan transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-trx-cyan transition-colors"
-              >
-                Terms of Service
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-trx-cyan transition-colors"
-              >
-                Cookie Policy
-              </a>
-            </div>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>
+            © {currentYear} TRX Sol. All rights reserved. | Serving Uttam Nagar,
+            Dwarka & Delhi NCR
+          </p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" className="hover:text-trx-cyan transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-trx-cyan transition-colors">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-trx-cyan transition-colors">
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>

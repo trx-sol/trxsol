@@ -5,9 +5,8 @@ import PortfolioSection from "@/components/PortfolioSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingSection from "@/components/PricingSection";
-import CTASection from "@/components/CTASection";
-import BlogPreviewSection from "@/components/BlogPreviewSection";
+// import CTASection from "@/components/CTASection";
+// import BlogPreviewSection from "@/components/BlogPreviewSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -20,9 +19,8 @@ export default function Home() {
       <HowItWorksSection />
       <FAQSection />
       <TestimonialsSection />
-      <PricingSection />
-      <CTASection />
-      <BlogPreviewSection />
+      {/* <CTASection />  */}
+      {/* <BlogPreviewSection /> */}
       <Footer />
     </main>
   );
