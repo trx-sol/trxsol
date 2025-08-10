@@ -5,7 +5,6 @@ import PortfolioSection from "@/components/PortfolioSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-// import CTASection from "@/components/CTASection";
 // import BlogPreviewSection from "@/components/BlogPreviewSection";
 import Footer from "@/components/Footer";
 
@@ -19,7 +18,7 @@ export default function Home() {
       <HowItWorksSection />
       <FAQSection />
       <TestimonialsSection />
-      {/* <CTASection />  */}
+
       {/* <BlogPreviewSection /> */}
       <Footer />
     </main>

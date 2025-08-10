@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 
 export const metadata = {
   title:
-    "TRX Sol - Professional Website Design & Development Company | Uttam Nagar & Dwarka",
+    "TRX Sol - Professional Website Design & Development Company | India and USA",
   description:
     "TRX Sol is a premier website design and development company serving Uttam Nagar and Dwarka. We offer comprehensive digital solutions including custom website development, SEO optimization, digital marketing, and modern UI/UX design. Our fast, responsive websites are built with cutting-edge technologies to boost your online presence.",
   keywords:

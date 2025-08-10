@@ -19,9 +19,6 @@ export default function Navigation() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/#services" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "How It Works", href: "/how-it-works" },
-    { name: "FAQ", href: "/faq" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
@@ -49,21 +46,40 @@ export default function Navigation() {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-4 z-50 transition-all duration-700 ease-out ${
         isScrolled
-          ? "backdrop-blur-xl bg-black/70 border-b border-white/10 shadow-[0_0_20px_rgba(0,255,255,0.3)] scale-[0.99]"
-          : "bg-transparent"
+          ? isOpen
+            ? "left-[5%] right-[5%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-3xl"
+            : "left-[10%] right-[10%] lg:left-[10%] lg:right-[10%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-full"
+          : "left-4 right-4 bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 lg:h-20">
+        <div
+          className={`flex justify-between items-center transition-all duration-700 ${
+            isScrolled ? "h-16 lg:h-20" : "h-16 lg:h-20"
+          }`}
+        >
           {/* Logo */}
-          <motion.div whileHover={{ scale: 1.05 }}>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className={`transition-all duration-700 ${
+              isScrolled ? "scale-90" : "scale-100"
+            }`}
+          >
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,255,255,0.6)]">
-                <span className="text-white font-bold">TRX</span>
+              <div
+                className={`bg-gradient-to-r from-purple-500 to-cyan-400 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,255,255,0.6)] transition-all duration-700 ${
+                  isScrolled ? "w-8 h-8" : "w-10 h-10"
+                }`}
+              >
+                <span className="text-white font-bold text-sm">TRX</span>
               </div>
-              <span className="text-white font-extrabold text-xl tracking-wide">
+              <span
+                className={`text-white font-extrabold tracking-wide transition-all duration-700 ${
+                  isScrolled ? "text-lg" : "text-xl"
+                }`}
+              >
                 TRX Sol
               </span>
             </Link>
@@ -76,6 +92,9 @@ export default function Navigation() {
                 key={item.name}
                 whileHover={{ y: -2 }}
                 transition={{ type: "spring", stiffness: 200 }}
+                className={`transition-all duration-700 ${
+                  isScrolled ? "scale-95" : "scale-100"
+                }`}
               >
                 <Link
                   href={item.href}
@@ -90,8 +109,20 @@ export default function Navigation() {
 
           {/* CTA */}
           <div className="hidden lg:block">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-gradient-to-r from-purple-500 to-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)] text-white px-6 py-2 rounded-lg">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`transition-all duration-700 ${
+                isScrolled ? "scale-95" : "scale-100"
+              }`}
+            >
+              <Button
+                className={`bg-gradient-to-r from-purple-500 to-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)] text-white transition-all duration-700 ${
+                  isScrolled
+                    ? "px-5 py-2 rounded-full text-sm"
+                    : "px-6 py-2 rounded-lg"
+                }`}
+              >
                 Get Started
               </Button>
             </motion.div>
@@ -103,7 +134,9 @@ export default function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="text-gray-300 p-2 rounded-lg hover:bg-white/10 transition"
+              className={`text-gray-300 p-2 rounded-lg hover:bg-white/10 transition-all duration-700 ${
+                isScrolled ? "scale-90" : "scale-100"
+              }`}
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (
@@ -141,7 +174,7 @@ export default function Navigation() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 overflow-hidden"
+            className="lg:hidden bg-black/90 backdrop-blur-lg border-t border-white/10 overflow-hidden rounded-b-3xl mt-2"
           >
             <div className="px-6 py-6 space-y-4">
               {navItems.map((item, i) => (
@@ -162,7 +195,7 @@ export default function Navigation() {
                   </Link>
                 </motion.div>
               ))}
-              <Button className="w-full bg-gradient-to-r from-purple-500 to-cyan-400 text-white shadow-[0_0_15px_rgba(0,255,255,0.6)]">
+              <Button className="w-full bg-gradient-to-r from-purple-500 to-cyan-400 text-white shadow-[0_0_15px_rgba(0,255,255,0.6)] rounded-full">
                 Get Started
               </Button>
             </div>
