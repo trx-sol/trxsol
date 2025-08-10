@@ -119,8 +119,8 @@ export default function Navigation() {
               <Button
                 className={`bg-gradient-to-r from-purple-500 to-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)] text-white transition-all duration-700 ${
                   isScrolled
-                    ? "px-5 py-2 rounded-full text-sm"
-                    : "px-6 py-2 rounded-lg"
+                    ? "px-5 py-3 rounded-full text-sm"
+                    : "px-6 py-3 rounded-lg"
                 }`}
               >
                 Get Started
