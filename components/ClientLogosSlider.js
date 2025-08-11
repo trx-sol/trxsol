@@ -38,8 +38,8 @@ export default function ClientLogosSlider() {
             Trusted by Local Businesses
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Empowering brands across Uttam Nagar, Dwarka, and beyond to grow
-            their online presence.
+            Empowering brands across India and USA, and beyond to grow their
+            online presence.
           </p>
         </div>
 

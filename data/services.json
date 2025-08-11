@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "website-designing",
+    "title": "Website Designing",
+    "shortDescription": "Create stunning, responsive websites that captivate your audience and drive conversions.",
+    "description": "As a leading Website Designing Company, our expert team creates visually stunning and user-friendly websites that perfectly reflect your brand's identity. We focus on creating seamless navigation experiences that keep your audience engaged and drive measurable business results.",
+    "icon": "Monitor",
+    "rating": 4.9,
+    "features": [
+      "Responsive design for all devices",
+      "Modern UI/UX with intuitive navigation",
+      "SEO-optimized structure and content",
+      "Fast loading speeds and performance",
+      "Content Management System integration",
+      "E-commerce functionality (if needed)",
+      "Analytics and tracking setup",
+      "Ongoing maintenance and support"
+    ],
+    "process": [
+      {
+        "title": "Discovery & Planning",
+        "description": "We start by understanding your business goals, target audience, and requirements to create a comprehensive project plan."
+      },
+      {
+        "title": "Design & Wireframing",
+        "description": "Our designers create stunning mockups and wireframes that align with your brand identity and user experience goals."
+      },
+      {
+        "title": "Development & Coding",
+        "description": "Our developers bring the designs to life using modern technologies and best practices for optimal performance."
+      },
+      {
+        "title": "Testing & Quality Assurance",
+        "description": "Rigorous testing across all devices and browsers to ensure flawless functionality and user experience."
+      },
+      {
+        "title": "Launch & Optimization",
+        "description": "Deploy your website and optimize for search engines, performance, and user engagement metrics."
+      }
+    ]
+  },
+  {
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "shortDescription": "Strategic digital marketing solutions to boost your online presence and drive growth.",
+    "description": "Harness the power of our comprehensive digital marketing solutions including SEO, social media optimization, content marketing, and PPC campaigns. We create data-driven strategies that increase your online visibility, attract targeted traffic, and deliver measurable ROI for your business.",
+    "icon": "Target",
+    "rating": 4.8,
+    "features": [
+      "Search Engine Optimization (SEO)",
+      "Social Media Marketing & Management",
+      "Content Marketing Strategy",
+      "Pay-Per-Click (PPC) Advertising",
+      "Email Marketing Campaigns",
+      "Analytics & Performance Tracking",
+      "Brand Awareness Building",
+      "Lead Generation & Conversion"
+    ],
+    "process": [
+      {
+        "title": "Market Research & Analysis",
+        "description": "Comprehensive analysis of your industry, competitors, and target audience to identify opportunities."
+      },
+      {
+        "title": "Strategy Development",
+        "description": "Create a customized digital marketing strategy aligned with your business goals and budget."
+      },
+      {
+        "title": "Content Creation & Optimization",
+        "description": "Develop engaging content and optimize existing assets for better search visibility and engagement."
+      },
+      {
+        "title": "Campaign Execution",
+        "description": "Launch and manage multi-channel campaigns across various digital platforms."
+      },
+      {
+        "title": "Monitoring & Optimization",
+        "description": "Continuous monitoring of performance metrics and optimization for better results."
+      }
+    ]
+  },
+  {
+    "slug": "graphic-designing",
+    "title": "Graphic Designing",
+    "shortDescription": "Creative graphic design solutions that bring your brand to life and engage your audience.",
+    "description": "Our talented graphic designers bring creativity to life by creating visually stunning designs that effectively convey your brand's message. From logos and branding to marketing materials and digital assets, we create designs that increase user engagement and leave a lasting impression.",
+    "icon": "Palette",
+    "rating": 4.9,
+    "features": [
+      "Logo Design & Brand Identity",
+      "Marketing Materials & Collateral",
+      "Social Media Graphics & Templates",
+      "Website Graphics & Icons",
+      "Print Design & Packaging",
+      "Infographics & Data Visualization",
+      "Digital Ads & Banners",
+      "Brand Guidelines & Style Guides"
+    ],
+    "process": [
+      {
+        "title": "Brief & Research",
+        "description": "Understanding your brand, target audience, and design requirements through detailed consultation."
+      },
+      {
+        "title": "Concept Development",
+        "description": "Creating multiple design concepts and exploring different creative directions for your project."
+      },
+      {
+        "title": "Design Creation",
+        "description": "Developing the chosen concept into a polished design using professional design tools and techniques."
+      },
+      {
+        "title": "Feedback & Revisions",
+        "description": "Incorporating your feedback and making necessary revisions to perfect the final design."
+      },
+      {
+        "title": "Final Delivery",
+        "description": "Delivering high-quality files in all required formats for various applications and platforms."
+      }
+    ]
+  },
+  {
+    "slug": "app-development",
+    "title": "App Development",
+    "shortDescription": "Custom mobile applications that deliver exceptional user experiences and drive business growth.",
+    "description": "Transform your ideas into reality with our experienced app development team. We create innovative, user-friendly mobile applications that enhance user experience, streamline business processes, and drive measurable growth for your organization.",
+    "icon": "Smartphone",
+    "rating": 4.7,
+    "features": [
+      "Native iOS & Android Development",
+      "Cross-platform App Development",
+      "Custom UI/UX Design",
+      "Backend Development & APIs",
+      "Database Design & Integration",
+      "Push Notifications & Analytics",
+      "App Store Optimization",
+      "Maintenance & Updates"
+    ],
+    "process": [
+      {
+        "title": "Requirements Analysis",
+        "description": "Deep dive into your app requirements, target audience, and technical specifications to plan the development."
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Create intuitive and engaging user interfaces that provide seamless user experiences across all devices."
+      },
+      {
+        "title": "Development & Coding",
+        "description": "Build the application using modern frameworks and technologies for optimal performance and scalability."
+      },
+      {
+        "title": "Testing & Quality Assurance",
+        "description": "Comprehensive testing across multiple devices and scenarios to ensure bug-free functionality."
+      },
+      {
+        "title": "Deployment & Launch",
+        "description": "Deploy to app stores and provide ongoing support and maintenance for your application."
+      }
+    ]
+  },
+  {
+    "slug": "seo-optimization",
+    "title": "SEO Optimization",
+    "shortDescription": "Comprehensive SEO strategies to improve your search rankings and drive organic traffic.",
+    "description": "Our SEO experts implement comprehensive optimization strategies to improve your website's search engine rankings, increase organic traffic, and boost your online visibility. We use data-driven approaches to deliver sustainable, long-term results.",
+    "icon": "Zap",
+    "rating": 4.8,
+    "features": [
+      "Technical SEO Audit & Optimization",
+      "Keyword Research & Strategy",
+      "On-page SEO Optimization",
+      "Content Optimization & Creation",
+      "Link Building & Outreach",
+      "Local SEO Optimization",
+      "Performance Monitoring",
+      "Monthly Reporting & Analysis"
+    ],
+    "process": [
+      {
+        "title": "SEO Audit & Analysis",
+        "description": "Comprehensive analysis of your current SEO performance and identification of improvement opportunities."
+      },
+      {
+        "title": "Keyword Research",
+        "description": "Research and identify high-value keywords that align with your business goals and target audience."
+      },
+      {
+        "title": "On-page Optimization",
+        "description": "Optimize website content, meta tags, and technical elements for better search engine visibility."
+      },
+      {
+        "title": "Content Strategy",
+        "description": "Develop and implement content strategies that attract and engage your target audience."
+      },
+      {
+        "title": "Link Building",
+        "description": "Build high-quality backlinks to improve domain authority and search rankings."
+      }
+    ]
+  },
+  {
+    "slug": "social-media-management",
+    "title": "Social Media Management",
+    "shortDescription": "Professional social media management to build your brand presence and engage your audience.",
+    "description": "Our social media experts create and manage compelling content across all major platforms to build your brand presence, engage your audience, and drive meaningful interactions. We develop strategies that align with your business goals and resonate with your target audience.",
+    "icon": "Users",
+    "rating": 4.9,
+    "features": [
+      "Content Creation & Curation",
+      "Platform Management (All Major Networks)",
+      "Community Engagement & Moderation",
+      "Paid Social Advertising",
+      "Influencer Collaboration",
+      "Performance Analytics & Reporting",
+      "Crisis Management",
+      "Brand Voice Development"
+    ],
+    "process": [
+      {
+        "title": "Strategy Development",
+        "description": "Create a comprehensive social media strategy aligned with your brand goals and target audience."
+      },
+      {
+        "title": "Content Planning",
+        "description": "Develop engaging content calendars and create compelling posts for all platforms."
+      },
+      {
+        "title": "Community Management",
+        "description": "Actively engage with your audience, respond to comments, and build meaningful relationships."
+      },
+      {
+        "title": "Performance Monitoring",
+        "description": "Track key metrics and analyze performance to optimize strategies and improve results."
+      },
+      {
+        "title": "Growth & Optimization",
+        "description": "Continuously optimize content and strategies based on performance data and trends."
+      }
+    ]
+  }
+]

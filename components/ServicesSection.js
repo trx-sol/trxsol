@@ -1,240 +1,152 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import {
-  Code,
+  ArrowRight,
+  Star,
+  Target,
+  Monitor,
   Palette,
-  Search,
   Smartphone,
-  ShoppingCart,
-  Settings,
-  Shield,
-  TrendingUp,
-  Users,
   Zap,
+  Users,
+  Shield,
 } from "lucide-react";
+import Link from "next/link";
+import servicesData from "@/data/services.json";
+import ConsultationDialog from "@/components/ConsultationDialog";
 
 export default function ServicesSection() {
-  const [activeTab, setActiveTab] = useState("design");
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const services = {
-    design: [
-      {
-        icon: Palette,
-        title: "Custom Website Design",
-        description:
-          "Unique, modern designs that represent your brand and engage your audience.",
-        features: [
-          "Responsive design",
-          "Brand integration",
-          "User-friendly",
-          "Modern aesthetics",
-        ],
-      },
-      {
-        icon: Code,
-        title: "Web Development",
-        description:
-          "Fast, secure, and scalable websites using the latest technologies.",
-        features: [
-          "Next.js & React",
-          "Performance optimized",
-          "SEO friendly",
-          "Security focused",
-        ],
-      },
-      {
-        icon: Smartphone,
-        title: "Mobile-First Design",
-        description: "Flawless performance and visuals across all devices.",
-        features: [
-          "Mobile responsive",
-          "Touch-friendly",
-          "Fast loading",
-          "Cross-browser compatible",
-        ],
-      },
-    ],
-    marketing: [
-      {
-        icon: Search,
-        title: "SEO Optimization",
-        description: "Boost your rankings and get more organic traffic.",
-        features: [
-          "Keyword optimization",
-          "Technical SEO",
-          "Local SEO",
-          "Performance tuning",
-        ],
-      },
-      {
-        icon: TrendingUp,
-        title: "Digital Marketing",
-        description: "Grow your online presence with tailored strategies.",
-        features: [
-          "Social media marketing",
-          "Content marketing",
-          "PPC campaigns",
-          "Analytics tracking",
-        ],
-      },
-      {
-        icon: Users,
-        title: "Social Media Management",
-        description: "Build your brand and engage effectively.",
-        features: [
-          "Content creation",
-          "Community management",
-          "Paid ads",
-          "Performance reports",
-        ],
-      },
-    ],
-    business: [
-      {
-        icon: ShoppingCart,
-        title: "E-Commerce Solutions",
-        description:
-          "Complete online store solutions to sell products & services.",
-        features: [
-          "Payment integration",
-          "Inventory management",
-          "Order processing",
-          "Customer support",
-        ],
-      },
-      {
-        icon: Settings,
-        title: "Website Maintenance",
-        description: "Keep your site secure, fast, and up-to-date.",
-        features: [
-          "Regular updates",
-          "Security monitoring",
-          "Backups",
-          "Performance optimization",
-        ],
-      },
-      {
-        icon: Shield,
-        title: "Security & Hosting",
-        description: "Reliable hosting with top-notch security.",
-        features: [
-          "SSL certificates",
-          "Daily backups",
-          "Monitoring",
-          "24/7 support",
-        ],
-      },
-    ],
+  // Get first 4 services for the homepage
+  const featuredServices = servicesData.slice(0, 4);
+
+  // Icon mapping function
+  const getIconComponent = (iconName) => {
+    const iconMap = {
+      Monitor: Monitor,
+      Target: Target,
+      Palette: Palette,
+      Smartphone: Smartphone,
+      Zap: Zap,
+      Users: Users,
+      Shield: Shield,
+    };
+    return iconMap[iconName] || Monitor; // Default to Monitor if icon not found
   };
 
   return (
-    <section
-      id="features"
-      className="py-20 bg-gradient-to-b from-black via-black/90 to-black"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our <span className="gradient-text">Services</span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            End-to-end web solutions for businesses in Uttam Nagar, Dwarka, and
-            beyond.
-          </p>
-        </div>
+    <>
+      <section className="py-20 bg-black relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-trx-purple/10 via-transparent to-trx-cyan/10" />
+        <motion.div
+          className="absolute top-1/4 left-1/4 w-72 h-72 md:w-[30rem] md:h-[30rem] bg-trx-purple/20 rounded-full blur-[120px]"
+          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute bottom-1/4 right-1/4 w-72 h-72 md:w-[30rem] md:h-[30rem] bg-trx-cyan/20 rounded-full blur-[120px]"
+          animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.4, 0.2] }}
+          transition={{ duration: 8, repeat: Infinity, delay: 2 }}
+        />
 
-        {/* Tabs */}
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="flex flex-wrap justify-center gap-2 bg-black/40  p-2 rounded-xl backdrop-blur-sm mb-12">
-            <TabsTrigger
-              value="design"
-              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
-            >
-              <Palette className="w-4 h-4 mr-2" />
-              Design & Development
-            </TabsTrigger>
-            <TabsTrigger
-              value="marketing"
-              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
-            >
-              <Search className="w-4 h-4 mr-2" />
-              Marketing & SEO
-            </TabsTrigger>
-            <TabsTrigger
-              value="business"
-              className="flex items-center px-4 py-2 rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-trx-purple data-[state=active]:to-trx-cyan text-white transition-all"
-            >
-              <Settings className="w-4 h-4 mr-2" />
-              Business Solutions
-            </TabsTrigger>
-          </TabsList>
-
-          {/* Service Cards */}
-          {Object.entries(services).map(([category, categoryServices]) => (
-            <TabsContent key={category} value={category}>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {categoryServices.map((service, index) => (
-                  <Card
-                    key={index}
-                    className="glass-effect border-white/10 hover:border-trx-cyan/50 hover:shadow-lg hover:shadow-trx-cyan/20 transition-all duration-300 group"
-                  >
-                    <CardHeader>
-                      <div className="w-14 h-14 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <service.icon className="w-6 h-6 text-white" />
-                      </div>
-                      <CardTitle className="text-white text-lg md:text-xl">
-                        {service.title}
-                      </CardTitle>
-                      <CardDescription className="text-gray-400">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-center text-sm text-gray-300"
-                          >
-                            <div className="w-1.5 h-1.5 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-full mr-3"></div>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
-
-        {/* CTA */}
-        <div className="text-center mt-20">
-          <div className="glass-effect rounded-2xl p-10 border border-white/10 max-w-3xl mx-auto">
-            <Zap className="w-12 h-12 text-trx-cyan mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Get Started?
-            </h3>
-            <p className="text-gray-400 mb-6">
-              Let's create a website that drives results for your business.
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Our{" "}
+              <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+                Services
+              </span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Comprehensive digital solutions designed to elevate your business
+              presence and drive sustainable growth
             </p>
-            <button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-3 rounded-lg font-semibold transition-transform duration-300 hover:scale-105">
-              Get Free Consultation
-            </button>
+          </motion.div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {featuredServices.map((service, index) => {
+              const IconComponent = getIconComponent(service.icon);
+              return (
+                <motion.div
+                  key={service.slug}
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <Link href={`/services/${service.slug}`}>
+                    <Card className="glass-effect border border-trx-purple/20 hover:border-trx-cyan/40 hover:shadow-lg hover:shadow-trx-cyan/20 transition-all duration-300 group bg-black/40 backdrop-blur-sm h-full cursor-pointer">
+                      <CardContent className="p-6 h-full flex flex-col">
+                        {/* Icon */}
+                        <div className="w-16 h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg mx-auto">
+                          <IconComponent className="w-8 h-8 text-white" />
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-trx-cyan transition-colors text-center">
+                          {service.title}
+                        </h3>
+
+                        {/* Description */}
+                        <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow text-center">
+                          {service.shortDescription}
+                        </p>
+
+                        {/* Arrow */}
+                        <div className="flex justify-center">
+                          <ArrowRight className="w-5 h-5 text-trx-cyan group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
+
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-center"
+          >
+            <div className="glass-effect rounded-3xl p-12 border border-trx-purple/20 max-w-4xl mx-auto bg-black/40 backdrop-blur-sm">
+              <div className="w-16 h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-white mb-4">
+                Ready to Get Started?
+              </h3>
+              <p className="text-gray-300 mb-8 text-lg">
+                Let&apos;s discuss your project and create something amazing
+                together.
+              </p>
+              <Button
+                onClick={() => setIsDialogOpen(true)}
+                className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105"
+              >
+                Get Free Consultation
+              </Button>
+            </div>
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Consultation Dialog */}
+      <ConsultationDialog open={isDialogOpen} onOpenChange={setIsDialogOpen} />
+    </>
   );
 }
