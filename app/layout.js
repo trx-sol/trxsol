@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import StructuredData from "@/components/StructuredData";
@@ -102,6 +103,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased">
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
