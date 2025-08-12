@@ -24,6 +24,7 @@ import Link from "next/link";
 import servicesData from "@/data/services.json";
 import ConsultationDialog from "@/components/ConsultationDialog";
 import { useState } from "react";
+import HeadText from "./Head-text";
 
 export default function ServicesPageClient() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -63,26 +64,13 @@ export default function ServicesPageClient() {
           {/* Hero Section */}
           <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto text-center">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
-              >
-                Our{" "}
-                <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-                  Services
-                </span>
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto"
-              >
-                Comprehensive digital solutions to transform your business and
-                boost your online presence
-              </motion.p>
+              <HeadText
+                title={"Our"}
+                title2={"Services"}
+                description={
+                  "Comprehensive digital solutions to transform your business and boost your online presence"
+                }
+              />
             </div>
           </section>
 

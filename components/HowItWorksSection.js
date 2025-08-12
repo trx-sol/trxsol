@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Target, Palette, Code, Rocket } from "lucide-react";
+import HeadText from "./Head-text";
 
 export default function HowItWorksSection() {
   const steps = [
@@ -50,16 +51,13 @@ export default function HowItWorksSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            How It&apos;s{" "}
-            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-              Going?
-            </span>
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            We start by understanding your requirement and vision to Design and
-            Develop a Website in Delhi that is tailored to your specific needs.
-          </p>
+          <HeadText
+            title={"How It's"}
+            title2={"Going?"}
+            description={
+              "We start by understanding your requirement and vision to Design and Develop a Website in Delhi that is tailored to your specific needs."
+            }
+          />
         </div>
 
         {/* Steps Grid */}

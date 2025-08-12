@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import HeadText from "./Head-text";
 
 export default function ClientLogosSlider() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,13 +35,13 @@ export default function ClientLogosSlider() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight">
-            Trusted by Local Businesses
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-            Empowering brands across India and USA, and beyond to grow their
-            online presence.
-          </p>
+          <HeadText
+            title={"Trusted by "}
+            title2={"Local Businesses"}
+            description={
+              "Empowering brands across India and USA, and beyond to grow their online presence."
+            }
+          />
         </div>
 
         {/* Logo Slider */}

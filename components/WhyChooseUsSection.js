@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Palette, Award } from "lucide-react";
+import HeadText from "./Head-text";
 
 export default function WhyChooseUsSection() {
   const reasons = [
@@ -49,16 +50,13 @@ export default function WhyChooseUsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Why Choose{" "}
-            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-              Us
-            </span>
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Discover what makes TRX Sol the preferred choice for businesses
-            seeking exceptional web design and development solutions.
-          </p>
+          <HeadText
+            title={"Why Choose"}
+            title2={"Us"}
+            description={
+              "Discover what makes TRX Sol the preferred choice for businesses seeking exceptional web design and development solutions."
+            }
+          />
         </motion.div>
 
         {/* Reasons Grid */}

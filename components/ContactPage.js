@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import PageHero from "./PageHero";
 import Form from "./Form";
+import HeadText from "./Head-text";
 
 export default function ContactPage() {
   return (
@@ -28,16 +29,13 @@ export default function ContactPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Start Your{" "}
-              <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-                Project
-              </span>
-            </h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Tell us about your project requirements and we&apos;ll get back to
-              you with a detailed proposal.
-            </p>
+            <HeadText
+              title={"Start Your"}
+              title2={"Project"}
+              description={
+                "Tell us about your project requirements and we'll get back to you with a detailed proposal."
+              }
+            />
           </motion.div>
 
           <div className="flex justify-center">

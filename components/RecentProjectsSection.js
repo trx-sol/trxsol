@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import HeadText from "./Head-text";
 
 export default function RecentProjectsSection() {
   const projects = [
@@ -69,16 +70,13 @@ export default function RecentProjectsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our Recent{" "}
-            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-              Projects
-            </span>
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Explore our latest work showcasing innovative designs and
-            cutting-edge development solutions.
-          </p>
+          <HeadText
+            title={"Our Recent"}
+            title2={"Projects"}
+            description={
+              "Explore our latest work showcasing innovative designs and cutting-edge development solutions."
+            }
+          />
         </motion.div>
 
         {/* Projects Grid */}

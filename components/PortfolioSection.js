@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import HeadText from "./Head-text";
 
 const categories = [
   "All",
@@ -93,15 +94,13 @@ export default function PortfolioSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-white">
-            Our{" "}
-            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-              Portfolio
-            </span>
-          </h2>
-          <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
-            A showcase of projects where creativity meets performance.
-          </p>
+          <HeadText
+            title={"Our"}
+            title2={"Portfolio"}
+            description={
+              "A showcase of projects where creativity meets performance."
+            }
+          />
         </motion.div>
 
         {/* Category Filters */}

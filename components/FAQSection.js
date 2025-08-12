@@ -5,6 +5,7 @@ import * as React from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Minus, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
+import HeadText from "./Head-text";
 
 export default function FAQSection() {
   const [openItem, setOpenItem] = React.useState(null);
@@ -89,17 +90,13 @@ export default function FAQSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-              Questions
-            </span>
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Everything you need to know about our website design and development
-            services. Can&apos;t find the answer you&apos;re looking for?
-            Contact our team.
-          </p>
+          <HeadText
+            title={"Frequently Asked"}
+            title2={"Questions"}
+            description={
+              "Everything you need to know about our website design and development services. Can't find the answer you're looking for? Contact our team."
+            }
+          />
         </motion.div>
 
         {/* FAQ Chat-like Accordion */}

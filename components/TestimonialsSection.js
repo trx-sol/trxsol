@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import HeadText from "./Head-text";
 
 // Helper to create initials from name
 const getInitials = (name) =>
@@ -131,12 +132,13 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center max-w-[620px] mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mt-5 text-white">
-            What our users say
-          </h2>
-          <p className="mt-5 text-gray-400">
-            See what our customers have to say about working with TRX Sol.
-          </p>
+          <HeadText
+            title={"What our"}
+            title2={"Users Say"}
+            description={
+              "See what our customers have to say about working with TRX Sol."
+            }
+          />
         </motion.div>
 
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)] max-h-[740px] overflow-hidden">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import servicesData from "@/data/services.json";
 import ConsultationDialog from "@/components/ConsultationDialog";
+import HeadText from "./Head-text";
 
 export default function ServicesSection() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -63,16 +64,13 @@ export default function ServicesSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Our{" "}
-              <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
-                Services
-              </span>
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive digital solutions designed to elevate your business
-              presence and drive sustainable growth
-            </p>
+            <HeadText
+              title={"Our"}
+              title2={"Services"}
+              description={
+                "Comprehensive digital solutions designed to elevate your business presence and drive sustainable growth"
+              }
+            />
           </motion.div>
 
           {/* Services Grid */}

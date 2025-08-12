@@ -8,6 +8,7 @@ import {
 } from "./ui/card";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, Clock, TrendingUp } from "lucide-react";
+import HeadText from "./Head-text";
 
 export default function BlogPreviewSection() {
   const blogPosts = [
@@ -54,13 +55,14 @@ export default function BlogPreviewSection() {
     <section id="blog" className="py-20 bg-black/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Latest <span className="gradient-text">Insights</span> & Tips
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Stay updated with the latest trends in web design, SEO, and digital
-            marketing. Expert tips to help your business grow online.
-          </p>
+          <HeadText
+            title={"Latest"}
+            title2={"Insights & Tips"}
+            title3={""}
+            description={
+              "Stay updated with the latest trends in web design, SEO, and digital marketing. Expert tips to help your business grow online."
+            }
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
