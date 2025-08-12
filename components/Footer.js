@@ -9,14 +9,14 @@ import {
   MapPin,
   Clock,
   ArrowRight,
-  Globe,
-  Shield,
-  Zap,
 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [showCallDialog, setShowCallDialog] = useState(false);
+  const [selectedPhone, setSelectedPhone] = useState("");
 
   const footerLinks = {
     services: [
@@ -35,22 +35,6 @@ export default function Footer() {
       { name: "Blog", href: "/blog" },
       { name: "FAQ", href: "/#faq" },
     ],
-    support: [
-      { name: "Help Center", href: "/contact" },
-      { name: "Documentation", href: "/contact" },
-      { name: "24/7 Support", href: "/contact" },
-      { name: "Maintenance", href: "/services/maintenance" },
-      { name: "Training", href: "/services/training" },
-      { name: "Updates", href: "/contact" },
-    ],
-    resources: [
-      { name: "Case Studies", href: "/portfolio" },
-      { name: "Tutorials", href: "/blog" },
-      { name: "Free Tools", href: "/contact" },
-      { name: "Webinars", href: "/contact" },
-      { name: "Guides", href: "/blog" },
-      { name: "Newsletter", href: "/contact" },
-    ],
   };
 
   const socialLinks = [
@@ -60,110 +44,96 @@ export default function Footer() {
     { name: "Email", icon: Mail, href: "mailto:hello@trxsol.com" },
   ];
 
-  const features = [
-    {
-      icon: Zap,
-      title: "Fast & Secure",
-      description: "Lightning-fast websites with top-notch security",
-    },
-    {
-      icon: Globe,
-      title: "Global Reach",
-      description: "Serving clients across India and USA",
-    },
-    {
-      icon: Shield,
-      title: "24/7 Support",
-      description: "Round-the-clock technical assistance",
-    },
-  ];
+  const handleCallClick = (phoneNumber, office) => {
+    setSelectedPhone({ number: phoneNumber, office });
+    setShowCallDialog(true);
+  };
+
+  const confirmCall = () => {
+    window.location.href = `tel:${selectedPhone.number}`;
+    setShowCallDialog(false);
+  };
 
   return (
     <footer className="relative bg-gradient-to-b from-black via-gray-900 to-black">
-      {/* Top Section with Features */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {features.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-trx-cyan/25">
-                    <IconComponent className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-white font-bold text-lg mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-400 text-sm">{feature.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
       {/* Contact CTA Section */}
       <div className="bg-gradient-to-r from-trx-purple/10 via-transparent to-trx-cyan/10 border-b border-white/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Still Confused?{" "}
               <span className="bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
                 Contact Us Now
               </span>
             </h2>
-            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-300 text-xl mb-12 max-w-3xl mx-auto">
               Get in touch with our experts for a free consultation. We&apos;re
               here to help you bring your vision to life.
             </p>
 
             {/* Contact Numbers */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
-              <div className="bg-black/60 backdrop-blur-sm border border-trx-purple/30 rounded-2xl p-6 hover:border-trx-cyan/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Phone className="w-6 h-6 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-8 sm:mb-12">
+              <div
+                className="bg-black/60 backdrop-blur-sm border-2 border-trx-purple/40 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:border-trx-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105"
+                onClick={() => handleCallClick("+919876543210", "India Office")}
+              >
+                <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-white" />
                   </div>
                 </div>
-                <h3 className="text-white font-bold text-lg mb-2">
+                <h3 className="text-white font-bold text-lg sm:text-xl lg:text-2xl mb-2 sm:mb-3 text-center">
                   India Office
                 </h3>
-                <p className="text-trx-cyan font-bold text-2xl mb-1">
+                <p className="text-trx-cyan font-bold text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-center">
                   +91 98765 43210
                 </p>
-                <p className="text-gray-400 text-sm">Delhi NCR, Uttam Nagar</p>
+                <p className="text-gray-400 text-sm sm:text-base lg:text-lg text-center">
+                  Delhi NCR, Uttam Nagar
+                </p>
+                <p className="text-trx-cyan text-xs sm:text-sm mt-1 sm:mt-2 font-medium text-center">
+                  Click to call
+                </p>
               </div>
 
-              <div className="bg-black/60 backdrop-blur-sm border border-trx-purple/30 rounded-2xl p-6 hover:border-trx-cyan/50 transition-all duration-300 group">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Phone className="w-6 h-6 text-white" />
+              <div
+                className="bg-black/60 backdrop-blur-sm border-2 border-trx-purple/40 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:border-trx-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105"
+                onClick={() => handleCallClick("+15551234567", "USA Office")}
+              >
+                <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-white" />
                   </div>
                 </div>
-                <h3 className="text-white font-bold text-lg mb-2">
+                <h3 className="text-white font-bold text-lg sm:text-xl lg:text-2xl mb-2 sm:mb-3 text-center">
                   USA Office
                 </h3>
-                <p className="text-trx-cyan font-bold text-2xl mb-1">
+                <p className="text-trx-cyan font-bold text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-center">
                   +1 (555) 123-4567
                 </p>
-                <p className="text-gray-400 text-sm">New York, NY</p>
+                <p className="text-gray-400 text-sm sm:text-base lg:text-lg text-center">
+                  New York, NY
+                </p>
+                <p className="text-trx-cyan text-xs sm:text-sm mt-1 sm:mt-2 font-medium text-center">
+                  Click to call
+                </p>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl shadow-trx-cyan/30 text-lg"
+                className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white font-bold rounded-2xl transition-all duration-300 hover:scale-105 shadow-xl shadow-trx-cyan/30 text-xl"
               >
                 Get Free Consultation
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-6 h-6 ml-3" />
               </Link>
               <a
                 href="mailto:hello@trxsol.com"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-trx-purple/40 text-white hover:bg-trx-purple/10 hover:border-trx-cyan/60 font-bold rounded-xl transition-all duration-300 text-lg"
+                className="inline-flex items-center justify-center px-10 py-5 border-2 border-trx-purple/40 text-white hover:bg-trx-purple/10 hover:border-trx-cyan/60 font-bold rounded-2xl transition-all duration-300 text-xl"
               >
-                <Mail className="w-5 h-5 mr-2" />
+                <Mail className="w-6 h-6 mr-3" />
                 Send Email
               </a>
             </div>
@@ -174,7 +144,7 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Brand and Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
@@ -284,6 +254,39 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Call Confirmation Dialog */}
+      {showCallDialog && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-gray-900 border border-trx-purple/30 rounded-2xl p-8 max-w-md w-full">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">
+                Call {selectedPhone.office}?
+              </h3>
+              <p className="text-gray-400 mb-6">
+                Do you want to call {selectedPhone.number}?
+              </p>
+              <div className="flex gap-4">
+                <button
+                  onClick={() => setShowCallDialog(false)}
+                  className="flex-1 px-6 py-3 border border-gray-600 text-gray-300 rounded-xl hover:bg-gray-800 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={confirmCall}
+                  className="flex-1 px-6 py-3 bg-gradient-to-r from-trx-purple to-trx-cyan text-white rounded-xl hover:from-trx-purple/90 hover:to-trx-cyan/90 transition-all"
+                >
+                  Call Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }
