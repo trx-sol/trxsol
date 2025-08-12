@@ -116,32 +116,11 @@ export default function ServicesSection() {
             })}
           </div>
 
-          {/* CTA Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center"
-          >
-            <div className="glass-effect rounded-3xl p-12 border border-trx-purple/20 max-w-4xl mx-auto bg-black/40 backdrop-blur-sm">
-              <div className="w-16 h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Ready to Get Started?
-              </h3>
-              <p className="text-gray-300 mb-8 text-lg">
-                Let&apos;s discuss your project and create something amazing
-                together.
-              </p>
-              <Button
-                onClick={() => setIsDialogOpen(true)}
-                className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105"
-              >
-                Get Free Consultation
-              </Button>
-            </div>
-          </motion.div>
+          <Link href="/services" className="flex justify-center w-min mx-auto">
+            <Button className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-trx-cyan/25">
+              View All Services
+            </Button>
+          </Link>
         </div>
       </section>
 
