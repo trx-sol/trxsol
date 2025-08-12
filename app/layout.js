@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import StructuredData from "@/components/StructuredData";
+import FloatingBottomBar from "@/components/FloatingBottomBar";
 
 export const metadata = {
   metadataBase: new URL("https://trxsol.com"),
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <FloatingBottomBar />
       </body>
     </html>
   );
