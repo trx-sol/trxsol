@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,44 +47,23 @@ export default function Navigation() {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className={`fixed top-4 z-50 transition-all duration-700 ease-out ${
-        isScrolled
-          ? isOpen
-            ? "left-[5%] right-[5%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-3xl"
-            : "left-[10%] right-[10%] lg:left-[10%] lg:right-[10%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-full"
-          : "left-4 right-4 bg-transparent"
-      }`}
+      className={`fixed top-4 z-50 transition-all duration-700 ease-out ${isScrolled
+        ? isOpen
+          ? "left-[5%] right-[5%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-3xl"
+          : "left-[10%] right-[10%] lg:left-[10%] lg:right-[10%] backdrop-blur-xl bg-black/80 border border-white/20 shadow-[0_8px_32px_rgba(0,255,255,0.2)] rounded-full"
+        : "left-4 right-4 bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`flex justify-between items-center transition-all duration-700 ${
-            isScrolled ? "h-16 lg:h-20" : "h-16 lg:h-20"
-          }`}
+          className={`flex justify-between items-center transition-all duration-700 h-20`}
         >
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className={`transition-all duration-700 ${
-              isScrolled ? "scale-90" : "scale-100"
-            }`}
-          >
+          <div className={`transition-all duration-700 ${isScrolled ? "scale-90" : "scale-100"}`}>
             <Link href="/" className="flex items-center gap-2">
-              <div
-                className={`bg-gradient-to-r from-purple-500 to-cyan-400 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,255,255,0.6)] transition-all duration-700 ${
-                  isScrolled ? "w-8 h-8" : "w-10 h-10"
-                }`}
-              >
-                <span className="text-white font-bold text-sm">TRX</span>
-              </div>
-              <span
-                className={`text-white font-extrabold tracking-wide transition-all duration-700 ${
-                  isScrolled ? "text-lg" : "text-xl"
-                }`}
-              >
-                TRX Sol
-              </span>
+              <Image src={"/logo.png"} alt="TRX Sol Logo" width={120} height={120} />
             </Link>
-          </motion.div>
+          </div>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex gap-8">
@@ -92,9 +72,8 @@ export default function Navigation() {
                 key={item.name}
                 whileHover={{ y: -2 }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className={`transition-all duration-700 ${
-                  isScrolled ? "scale-95" : "scale-100"
-                }`}
+                className={`transition-all duration-700 ${isScrolled ? "scale-95" : "scale-100"
+                  }`}
               >
                 <Link
                   href={item.href}
@@ -112,16 +91,14 @@ export default function Navigation() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`transition-all duration-700 ${
-                isScrolled ? "scale-95" : "scale-100"
-              }`}
+              className={`transition-all duration-700 ${isScrolled ? "scale-95" : "scale-100"
+                }`}
             >
               <Button
-                className={`bg-gradient-to-r from-purple-500 to-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)] text-white transition-all duration-700 ${
-                  isScrolled
-                    ? "px-5 py-3 rounded-full text-sm"
-                    : "px-6 py-3 rounded-lg"
-                }`}
+                className={`bg-gradient-to-r from-purple-500 to-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)] text-white transition-all duration-700 ${isScrolled
+                  ? "px-5 py-3 rounded-full text-sm"
+                  : "px-6 py-3 rounded-lg"
+                  }`}
               >
                 Get Started
               </Button>
@@ -134,9 +111,8 @@ export default function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className={`text-gray-300 p-2 rounded-lg hover:bg-white/10 transition-all duration-700 ${
-                isScrolled ? "scale-90" : "scale-100"
-              }`}
+              className={`text-gray-300 p-2 rounded-lg hover:bg-white/10 transition-all duration-700 ${isScrolled ? "scale-90" : "scale-100"
+                }`}
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (

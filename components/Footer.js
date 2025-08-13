@@ -10,6 +10,7 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -147,17 +148,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-14 h-14 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-2xl flex items-center justify-center shadow-xl shadow-trx-cyan/30">
-                <span className="text-white font-bold text-lg">TRX</span>
-              </div>
-              <div>
-                <span className="text-white font-bold text-2xl tracking-wide">
-                  TRX Sol
-                </span>
-                <p className="text-trx-cyan text-sm">Digital Excellence</p>
-              </div>
-            </div>
+            <Link href={"/"} className="flex items-center space-x-3 mb-4">
+              <Image src={"/logo.png"} alt="TRX Sol Logo" width={180} height={180} />
+            </Link>
 
             <p className="text-gray-400 leading-relaxed mb-6 text-base">
               Premium website design and development company serving India and
