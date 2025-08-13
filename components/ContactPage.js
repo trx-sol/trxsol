@@ -118,6 +118,28 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <div className="relative h-[400px] max-w-7xl mx-auto rounded-xl overflow-hidden mb-20">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.563149319496!2d77.2271198!3d28.612912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1628151876979!5m2!1sen!2sin"
+          className="absolute top-0 left-0 w-full h-full border-0 "
+
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-md p-4 rounded-xl border border-white/10 w-[calc(100%-theme(spacing.4))]">
+          <div className="flex items-start gap-3">
+            <MapPin className="w-5 h-5 text-trx-cyan mt-1" />
+            <div>
+              <p className="text-white font-semibold">Visit Us</p>
+              <p className="text-gray-300">India Gate, New Delhi</p>
+              <p className="text-gray-300">Delhi, 110001, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
