@@ -4,47 +4,33 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  CheckCircle,
-  Star,
-  Monitor,
-  Target,
-  Palette,
-  Smartphone,
-  Zap,
-  Users,
-  Shield,
-} from "lucide-react";
+import { ArrowRight, CheckCircle, Star } from "lucide-react";
 import Link from "next/link";
 import ConsultationDialog from "@/components/ConsultationDialog";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import RecentProjectsSection from "@/components/RecentProjectsSection";
 import FAQSection from "@/components/FAQSection";
+import PageHero from "./PageHero";
 
 export default function ServiceDetailClient({ service }) {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
 
-  // Icon mapping function
-  const getIconComponent = (iconName) => {
-    const iconMap = {
-      Monitor: Monitor,
-      Target: Target,
-      Palette: Palette,
-      Smartphone: Smartphone,
-      Zap: Zap,
-      Users: Users,
-      Shield: Shield,
-    };
-    return iconMap[iconName] || Monitor; // Default to Monitor if icon not found
-  };
-
-  const IconComponent = getIconComponent(service.icon);
-
   return (
     <>
-      <div className="min-h-screen bg-black">
+      <div className="min-h-screen bg-black mt-20">
+        <PageHero
+          align="left"
+          title={
+            <>
+              {service.title}
+              <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+                Services
+              </span>
+            </>
+          }
+          subtitle={service.description}
+        />
         {/* Hero Section */}
         <section className="relative py-24 bg-black overflow-hidden">
           {/* Gradient Background Glow */}
@@ -75,24 +61,6 @@ export default function ServiceDetailClient({ service }) {
                 <ArrowRight className="w-4 h-4 mr-2 rotate-180 group-hover:-translate-x-1 transition-transform" />
                 <span className="group-hover:underline">Back to Services</span>
               </Link>
-            </motion.div>
-
-            {/* Service Header */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-center mb-20"
-            >
-              <div className="w-32 h-32 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl shadow-trx-purple/25">
-                <IconComponent className="w-16 h-16 text-white" />
-              </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-                {service.title}
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-                {service.description}
-              </p>
             </motion.div>
 
             {/* Service Details Grid */}

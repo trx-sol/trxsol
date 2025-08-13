@@ -25,6 +25,7 @@ import servicesData from "@/data/services.json";
 import ConsultationDialog from "@/components/ConsultationDialog";
 import { useState } from "react";
 import HeadText from "./Head-text";
+import PageHero from "./PageHero";
 
 export default function ServicesPageClient() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -62,20 +63,23 @@ export default function ServicesPageClient() {
         {/* Main Content */}
         <div className="relative z-10">
           {/* Hero Section */}
-          <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto text-center">
-              <HeadText
-                title={"Our"}
-                title2={"Services"}
-                description={
-                  "Comprehensive digital solutions to transform your business and boost your online presence"
-                }
-              />
-            </div>
+          <section>
+            <PageHero
+              align="left"
+              title={
+                <>
+                  Our{" "}
+                  <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
+                    Services
+                  </span>
+                </>
+              }
+              subtitle="Comprehensive digital solutions to transform your business and boost your online presence"
+            />
           </section>
 
           {/* Services Grid */}
-          <section className="pb-16 px-4 sm:px-6 lg:px-8">
+          <section className="pb-16 px-4 sm:px-6 lg:px-8 pt-10">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {servicesData.map((service, index) => {
@@ -101,19 +105,7 @@ export default function ServicesPageClient() {
                             </CardDescription>
                           </CardHeader>
                           <CardContent>
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center space-x-1">
-                                {[...Array(5)].map((_, i) => (
-                                  <Star
-                                    key={i}
-                                    className={`w-4 h-4 ${
-                                      i < service.rating
-                                        ? "text-yellow-400 fill-current"
-                                        : "text-gray-600"
-                                    }`}
-                                  />
-                                ))}
-                              </div>
+                            <div className="flex items-center justify-end">
                               <ArrowRight className="w-5 h-5 text-trx-cyan group-hover:translate-x-1 transition-transform" />
                             </div>
                           </CardContent>

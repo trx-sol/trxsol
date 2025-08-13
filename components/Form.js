@@ -23,7 +23,7 @@ import {
   Send,
 } from "lucide-react";
 
-const Form = () => {
+const Form = ({ align = "center" }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -121,8 +121,14 @@ const Form = () => {
 
   if (isSubmitted) {
     return (
-      <Card className="bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md mx-auto hover:shadow-trx-cyan/30 transition-all duration-300">
-        <CardContent className="text-center py-12">
+      <Card
+        className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${
+          align === "left" ? "" : "mx-auto"
+        } hover:shadow-trx-cyan/30 transition-all duration-300`}
+      >
+        <CardContent
+          className={`${align === "left" ? "text-left" : "text-center"} py-12`}
+        >
           <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
           <p className="text-gray-400 mb-4">
@@ -132,7 +138,11 @@ const Form = () => {
             We&apos;ll get back to you within 24 hours with a custom proposal.
           </p>
           <div className="mt-6">
-            <div className="flex items-center justify-center space-x-2 text-trx-cyan">
+            <div
+              className={`flex items-center ${
+                align === "left" ? "justify-start" : "justify-center"
+              } space-x-2 text-trx-cyan`}
+            >
               <Send className="w-4 h-4" />
               <span className="text-sm">Email sent to: {formData.email}</span>
             </div>
@@ -143,8 +153,14 @@ const Form = () => {
   }
 
   return (
-    <Card className="bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md mx-auto hover:shadow-trx-cyan/30 transition-all duration-300">
-      <CardHeader className="text-center pb-4">
+    <Card
+      className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${
+        align === "left" ? "" : "mx-auto"
+      } hover:shadow-trx-cyan/30 transition-all duration-300`}
+    >
+      <CardHeader
+        className={`${align === "left" ? "text-left" : "text-center"} pb-4`}
+      >
         <CardTitle className="text-2xl font-bold text-white mb-2">
           Let&apos;s Build Your Website
         </CardTitle>

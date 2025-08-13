@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 import PageHero from "./PageHero";
 import Form from "./Form";
 import HeadText from "./Head-text";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <div className="bg-black min-h-screen">
       {/* Hero Section */}
       <PageHero
+        align="left"
         title={
           <>
             Let&apos;s Build Something{" "}
@@ -27,9 +29,10 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="mb-12"
           >
             <HeadText
+              align="left"
               title={"Start Your"}
               title2={"Project"}
               description={
@@ -38,8 +41,80 @@ export default function ContactPage() {
             />
           </motion.div>
 
-          <div className="flex justify-center">
-            <Form />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Contact Details */}
+            <div className="bg-black/50 border border-trx-purple/30 rounded-2xl p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Get in Touch
+              </h3>
+              <p className="text-gray-400 mb-6">
+                Reach out via call, WhatsApp, or email. We usually respond
+                within a few hours.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-trx-cyan mt-1" />
+                  <div>
+                    <p className="text-white font-semibold">Call Us</p>
+                    <div className="text-trx-cyan">
+                      <a
+                        href="tel:+919876543210"
+                        className="hover:underline block"
+                      >
+                        +91 98765 43210 (India)
+                      </a>
+                      <a
+                        href="tel:+15551234567"
+                        className="hover:underline block"
+                      >
+                        +1 (555) 123-4567 (USA)
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <MessageCircle className="w-5 h-5 text-trx-cyan mt-1" />
+                  <div>
+                    <p className="text-white font-semibold">WhatsApp</p>
+                    <a
+                      href="https://wa.me/919876543210"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-trx-cyan hover:underline"
+                    >
+                      Chat on WhatsApp (India)
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Mail className="w-5 h-5 text-trx-cyan mt-1" />
+                  <div>
+                    <p className="text-white font-semibold">Email</p>
+                    <a
+                      href="mailto:hello@trxsol.com"
+                      className="text-trx-cyan hover:underline"
+                    >
+                      hello@trxsol.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-trx-cyan mt-1" />
+                  <div>
+                    <p className="text-white font-semibold">Location</p>
+                    <p className="text-gray-400">Uttam Nagar, Delhi, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Form */}
+            <div>
+              <Form align="left" />
+            </div>
           </div>
         </div>
       </section>

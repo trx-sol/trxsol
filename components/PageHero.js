@@ -1,7 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function PageHero({ title, subtitle, children }) {
+export default function PageHero({
+  title,
+  subtitle,
+  children,
+  align = "center",
+}) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -30,7 +35,7 @@ export default function PageHero({ title, subtitle, children }) {
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-trx-purple/10 via-transparent to-trx-cyan/10"></div>
-        <motion.div 
+        <motion.div
           className="absolute top-1/4 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-trx-purple/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
@@ -57,7 +62,11 @@ export default function PageHero({ title, subtitle, children }) {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-20 text-center">
+      <div
+        className={`relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-20 ${
+          align === "left" ? "text-left" : "text-center"
+        }`}
+      >
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -76,7 +85,9 @@ export default function PageHero({ title, subtitle, children }) {
           {subtitle && (
             <motion.p
               variants={itemVariants}
-              className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto"
+              className={`text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl ${
+                align === "left" ? "" : "mx-auto"
+              }`}
             >
               {subtitle}
             </motion.p>
@@ -84,9 +95,7 @@ export default function PageHero({ title, subtitle, children }) {
 
           {/* Additional Content */}
           {children && (
-            <motion.div variants={itemVariants}>
-              {children}
-            </motion.div>
+            <motion.div variants={itemVariants}>{children}</motion.div>
           )}
         </motion.div>
       </div>

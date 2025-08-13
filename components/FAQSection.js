@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import HeadText from "./Head-text";
 
 export default function FAQSection() {
-  const [openItem, setOpenItem] = React.useState(null);
+  const [openItem, setOpenItem] = React.useState("1");
 
   const faqs = [
     {
