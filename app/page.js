@@ -91,7 +91,7 @@ export default function Home() {
       <FAQSection />
       <TestimonialsSection />
       <ClientLogosSlider />
-      <BlogPreviewSection />
+      {/* <BlogPreviewSection /> */}
     </main>
   );
 }
