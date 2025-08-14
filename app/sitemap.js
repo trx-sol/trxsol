@@ -1,6 +1,19 @@
-export default function sitemap() {
-  const baseUrl = "https://trxsol.com";
+import { fetchBlogs } from "@/lib/datafatch";
+
+export default async function sitemap() {
+  const baseUrl = "https://trxsol.in";
   const currentDate = new Date().toISOString();
+
+  // Fetch all blog posts
+  const blogs = await fetchBlogs();
+
+  // Generate blog URLs
+  const blogUrls = blogs.map((blog) => ({
+    url: `${baseUrl}/blog/${blog.seo.slug}`,
+    lastModified: blog.publish_info.date_modified || blog.publish_info.date_published,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
 
   // Static pages
   const staticPages = [
@@ -96,32 +109,10 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  // Blog post pages (example blog posts)
-  const blogPosts = [
-    "website-design-trends-2024",
-    "seo-best-practices",
-    "digital-marketing-strategies",
-    "mobile-app-development-guide",
-    "graphic-design-tips",
-    "social-media-marketing",
-    "cybersecurity-tips",
-    "web-development-trends",
-    "ui-ux-design-principles",
-    "content-marketing-strategy",
-    "responsive-web-design",
-    "ecommerce-optimization",
-    "brand-identity-design",
-    "local-seo-strategies",
-    "social-media-advertising",
-  ];
 
-  const blogPages = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post}`,
-    lastModified: currentDate,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+
+
 
   // Combine all pages
-  return [...staticPages, ...servicePages, ...portfolioPages, ...blogPages];
+  return [...staticPages, ...servicePages, ...portfolioPages, ...blogUrls];
 }

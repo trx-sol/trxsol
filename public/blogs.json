@@ -1,0 +1,649 @@
+[
+  {
+    "meta": {
+      "meta_title": "Advanced SEO Blog Checklist for 2025 | TRX Solutions",
+      "meta_description": "Step-by-step SEO checklist for blogs in 2025 with metadata, tags, and optimization tips to rank higher in Google search results.",
+      "canonical_url": "https://trxsolutions.in/blog/advanced-seo-blog-checklist-2025",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "SEO blog checklist 2025",
+      "secondary_keywords": ["SEO checklist", "blog SEO tips", "Google ranking tips 2025"],
+      "slug": "advanced-seo-blog-checklist-2025",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "Advanced SEO Blog Checklist for 2025",
+        "og_description": "Complete SEO checklist for blogs to rank higher in 2025. Includes tags, metadata, images, and schema tips.",
+        "og_image": "/images/blog/default-blog-image.png",
+        "og_url": "https://trxsolutions.in/blog/advanced-seo-blog-checklist-2025",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Advanced SEO Blog Checklist for 2025",
+        "twitter_description": "Complete SEO checklist for blogs to rank higher in 2025. Includes tags, metadata, images, and schema tips.",
+        "twitter_image": "/api/blog-image?title=Advanced SEO Blog Checklist for 2025"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-11",
+      "date_modified": "2025-08-11",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "Full Stack Developer & SEO Specialist helping brands grow online."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "Advanced SEO Blog Checklist for 2025",
+      "excerpt": "A complete, advanced SEO checklist for blog posts in 2025 — covering tags, metadata, images, and schema to improve Google rankings.",
+      "reading_time_minutes": "8",
+      "word_count": "1850",
+      "featured_image": {
+        "src": "/api/blog-image?title=Advanced SEO Blog Checklist for 2025",
+        "alt": "Advanced SEO Blog Checklist for 2025",
+        "caption": "SEO checklist for blogs in 2025"
+      }
+    },
+    "content": {
+      "introduction": "In 2025, SEO for blogs has become more competitive than ever. This checklist will guide you through all the essential steps — from metadata and headings to schema and images — ensuring your blog ranks higher and attracts organic traffic.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "Optimize Metadata for Clicks & Rankings",
+          "heading_tag": "h2",
+          "content": "Ensure your meta title (50–60 characters) includes the primary keyword. Write a meta description (150–160 characters) that encourages clicks and includes secondary keywords."
+        },
+        {
+          "heading": "Use Proper Heading Structure",
+          "heading_tag": "h2",
+          "content": "Your blog should have only one H1 containing the primary keyword. Break content into H2 and H3 sections using secondary keywords naturally."
+        },
+        {
+          "heading": "Image SEO Optimization",
+          "heading_tag": "h2",
+          "content": "Use descriptive filenames, keyword-rich alt text, and WebP format for faster loading. Add captions where needed."
+        }
+      ],
+      "conclusion": "By following this checklist, you'll make sure your blogs are fully optimized for search engines and readers alike. Start applying these tips to see a boost in your organic rankings.",
+      "faq": [
+        {
+          "question": "How long should a blog post be for SEO in 2025?",
+          "answer": "Ideally 1,500–2,500 words, depending on the keyword competition."
+        },
+        {
+          "question": "Do I need schema markup for every blog post?",
+          "answer": "Yes, schema helps Google understand your content and can improve rich results."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Advanced SEO Blog Checklist for 2025",
+      "image": [
+        "https://trxsolutions.in/images/blog/seo-blog-checklist-2025.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-11",
+      "dateModified": "2025-08-11",
+      "description": "Step-by-step SEO checklist for blogs in 2025 with metadata, tags, and optimization tips to rank higher in Google search results."
+    }
+  },
+  {
+    "meta": {
+      "meta_title": "10 Next.js 14 Features That Will Transform Your Web Development | TRX Solutions",
+      "meta_description": "Discover the game-changing features in Next.js 14 that are revolutionizing web development. Learn about Server Actions, Partial Rendering, and more.",
+      "canonical_url": "https://trxsolutions.in/blog/nextjs-14-features-transform-web-development",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "Next.js 14 features",
+      "secondary_keywords": ["Next.js development", "Server Actions", "React framework", "Web Development"],
+      "slug": "nextjs-14-features-transform-web-development",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "10 Next.js 14 Features That Will Transform Your Web Development",
+        "og_description": "Explore the revolutionary features in Next.js 14 that are changing how we build modern web applications. From Server Actions to Partial Rendering.",
+        "og_image": "/images/blog/nextjs-14-features.webp",
+        "og_url": "https://trxsolutions.in/blog/nextjs-14-features-transform-web-development",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "10 Next.js 14 Features That Will Transform Your Web Development",
+        "twitter_description": "Explore the revolutionary features in Next.js 14 that are changing how we build modern web applications. From Server Actions to Partial Rendering.",
+        "twitter_image": "/images/blog/nextjs-14-features.webp"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-10",
+      "date_modified": "2025-08-14",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "Full Stack Developer specializing in Next.js and React applications."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "10 Next.js 14 Features That Will Transform Your Web Development",
+      "excerpt": "Next.js 14 brings groundbreaking features that are revolutionizing how we build web applications. From enhanced Server Actions to Partial Rendering, discover what's new.",
+      "reading_time_minutes": "12",
+      "word_count": "2500",
+      "featured_image": {
+        "src": "/images/blog/nextjs-14-features.webp",
+        "alt": "Next.js 14 New Features Overview",
+        "caption": "Next.js 14 introduces powerful features for modern web development"
+      }
+    },
+    "content": {
+      "introduction": "Next.js 14 represents a significant leap forward in web development, introducing features that make building modern applications faster, more efficient, and more developer-friendly than ever before.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "Enhanced Server Actions",
+          "heading_tag": "h2",
+          "content": "Server Actions in Next.js 14 now support streaming, allowing for more responsive user interfaces and better handling of server-side mutations. Learn how to implement them effectively."
+        },
+        {
+          "heading": "Partial Rendering",
+          "heading_tag": "h2",
+          "content": "The new Partial Rendering feature allows you to update specific parts of your page without a full page reload, significantly improving performance and user experience."
+        },
+        {
+          "heading": "Turbopack Improvements",
+          "heading_tag": "h2",
+          "content": "Turbopack now offers even faster development builds and hot module replacement, making your development workflow smoother and more efficient."
+        }
+      ],
+      "conclusion": "Next.js 14 is setting new standards for web development, providing developers with the tools they need to build faster, more scalable, and more maintainable applications.",
+      "faq": [
+        {
+          "question": "Is Next.js 14 backward compatible?",
+          "answer": "Yes, Next.js 14 maintains backward compatibility while introducing new features, making migration from older versions straightforward."
+        },
+        {
+          "question": "Do I need to learn new concepts for Server Actions?",
+          "answer": "While Server Actions build on existing concepts, understanding the new streaming capabilities and patterns will help you make the most of this feature."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "10 Next.js 14 Features That Will Transform Your Web Development",
+      "image": [
+        "https://trxsolutions.in/images/blog/nextjs-14-features.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-10",
+      "dateModified": "2025-08-14",
+      "description": "Discover the game-changing features in Next.js 14 that are revolutionizing web development. Learn about Server Actions, Partial Rendering, and more."
+    }
+  },
+  {
+    "meta": {
+      "meta_title": "Website Performance Optimization Guide 2025: Speed Up Your Site | TRX Solutions",
+      "meta_description": "Learn proven techniques to optimize your website's performance in 2025. From Core Web Vitals to advanced caching strategies, boost your site's speed significantly.",
+      "canonical_url": "https://trxsolutions.in/blog/website-performance-optimization-guide-2025",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "website performance optimization 2025",
+      "secondary_keywords": ["Core Web Vitals", "website speed", "performance optimization", "site optimization"],
+      "slug": "website-performance-optimization-guide-2025",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "Website Performance Optimization Guide 2025: Speed Up Your Site",
+        "og_description": "Comprehensive guide to optimizing your website's performance in 2025. Learn advanced techniques for faster loading times and better user experience.",
+        "og_image": "/images/blog/website-performance-guide.webp",
+        "og_url": "https://trxsolutions.in/blog/website-performance-optimization-guide-2025",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Website Performance Optimization Guide 2025",
+        "twitter_description": "Comprehensive guide to optimizing your website's performance in 2025. Learn advanced techniques for faster loading times and better user experience.",
+        "twitter_image": "/images/blog/website-performance-guide.webp"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-13",
+      "date_modified": "2025-08-14",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "Performance optimization expert with 8+ years of experience in web development."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "Website Performance Optimization Guide 2025",
+      "excerpt": "A comprehensive guide to optimizing your website's performance in 2025. Learn about Core Web Vitals, caching strategies, and advanced optimization techniques.",
+      "reading_time_minutes": "15",
+      "word_count": "3000",
+      "featured_image": {
+        "src": "/images/blog/website-performance-guide.webp",
+        "alt": "Website Performance Optimization Techniques",
+        "caption": "Modern techniques for optimizing website performance in 2025"
+      }
+    },
+    "content": {
+      "introduction": "In 2025, website performance has become more crucial than ever for user experience and SEO. This comprehensive guide covers the latest techniques and best practices for optimizing your website's speed and performance.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "Core Web Vitals in 2025",
+          "heading_tag": "h2",
+          "content": "Learn how to optimize your Core Web Vitals metrics (LCP, FID, CLS) to meet Google's latest standards and improve your search rankings."
+        },
+        {
+          "heading": "Advanced Caching Strategies",
+          "heading_tag": "h2",
+          "content": "Implement modern caching techniques using service workers, CDNs, and browser storage to significantly reduce loading times."
+        },
+        {
+          "heading": "Image and Asset Optimization",
+          "heading_tag": "h2",
+          "content": "Discover the latest tools and formats for optimizing images and assets, including next-gen formats like AVIF and WebP."
+        }
+      ],
+      "conclusion": "Implementing these performance optimization techniques will not only improve your website's speed but also enhance user experience and search engine rankings.",
+      "faq": [
+        {
+          "question": "How important is mobile performance in 2025?",
+          "answer": "Mobile performance is crucial as over 70% of web traffic comes from mobile devices. Google's mobile-first indexing makes it essential for SEO."
+        },
+        {
+          "question": "What are the target Core Web Vitals scores for 2025?",
+          "answer": "For optimal performance, aim for LCP under 2.5s, FID under 100ms, and CLS under 0.1."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Website Performance Optimization Guide 2025",
+      "image": [
+        "https://trxsolutions.in/images/blog/website-performance-guide.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-13",
+      "dateModified": "2025-08-14",
+      "description": "Learn proven techniques to optimize your website's performance in 2025. From Core Web Vitals to advanced caching strategies, boost your site's speed significantly."
+    }
+  } ,{
+    "meta": {
+      "meta_title": "Top 7 AI SEO Tools for 2025 to Skyrocket Rankings | TRX Solutions",
+      "meta_description": "Discover the best AI-powered SEO tools in 2025 to automate keyword research, content optimization, and link building for higher Google rankings.",
+      "canonical_url": "https://trxsolutions.in/blog/ai-seo-tools-2025",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "AI SEO tools 2025",
+      "secondary_keywords": ["AI keyword research", "SEO automation tools", "AI content optimization"],
+      "slug": "ai-seo-tools-2025",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "Top 7 AI SEO Tools for 2025",
+        "og_description": "Boost your rankings with AI SEO tools in 2025. Automate keyword research, content optimization, and link building.",
+        "og_image": "/images/blog/ai-seo-tools-2025.webp",
+        "og_url": "https://trxsolutions.in/blog/ai-seo-tools-2025",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Top 7 AI SEO Tools for 2025",
+        "twitter_description": "Boost your rankings with AI SEO tools in 2025. Automate keyword research, content optimization, and link building.",
+        "twitter_image": "/images/blog/ai-seo-tools-2025.webp"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-14",
+      "date_modified": "2025-08-14",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "Full Stack Developer & SEO Specialist focusing on AI-driven marketing strategies."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "Top 7 AI SEO Tools for 2025",
+      "excerpt": "A curated list of the most powerful AI SEO tools in 2025 to help you rank faster and smarter.",
+      "reading_time_minutes": "9",
+      "word_count": "2000",
+      "featured_image": {
+        "src": "/images/blog/ai-seo-tools-2025.webp",
+        "alt": "AI SEO tools list 2025",
+        "caption": "Best AI-powered SEO tools in 2025"
+      }
+    },
+    "content": {
+      "introduction": "Artificial Intelligence is transforming SEO in 2025. These AI SEO tools will help you automate tedious tasks and focus on strategy.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "AI Keyword Research",
+          "heading_tag": "h2",
+          "content": "Leverage AI tools like Surfer SEO and SEMrush AI for finding low-competition, high-intent keywords."
+        },
+        {
+          "heading": "AI Content Optimization",
+          "heading_tag": "h2",
+          "content": "Tools like Frase and Clearscope help improve content relevance using NLP algorithms."
+        },
+        {
+          "heading": "Automated Link Building",
+          "heading_tag": "h2",
+          "content": "AI can identify link opportunities and even personalize outreach emails."
+        }
+      ],
+      "conclusion": "By integrating AI SEO tools into your workflow, you can save time and improve efficiency while boosting rankings.",
+      "faq": [
+        {
+          "question": "Are AI SEO tools better than manual SEO?",
+          "answer": "They complement manual SEO by automating repetitive tasks, but human strategy is still crucial."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Top 7 AI SEO Tools for 2025",
+      "image": [
+        "https://trxsolutions.in/images/blog/ai-seo-tools-2025.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-14",
+      "dateModified": "2025-08-14",
+      "description": "Discover the best AI-powered SEO tools in 2025 to automate keyword research, content optimization, and link building."
+    }
+  },
+  {
+    "meta": {
+      "meta_title": "Next.js Performance Optimization Best Practices 2025 | TRX Solutions",
+      "meta_description": "Master Next.js performance optimization in 2025 with advanced strategies for faster load times, Core Web Vitals, and server-side efficiency.",
+      "canonical_url": "https://trxsolutions.in/blog/nextjs-performance-optimization-2025",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "Next.js performance optimization 2025",
+      "secondary_keywords": ["Next.js speed tips", "Core Web Vitals Next.js", "React performance"],
+      "slug": "nextjs-performance-optimization-2025",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "Next.js Performance Optimization Best Practices 2025",
+        "og_description": "Advanced Next.js performance optimization tips to improve speed, Core Web Vitals, and SEO in 2025.",
+        "og_image": "/images/blog/nextjs-performance-2025.webp",
+        "og_url": "https://trxsolutions.in/blog/nextjs-performance-optimization-2025",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Next.js Performance Optimization Best Practices 2025",
+        "twitter_description": "Advanced Next.js performance optimization tips to improve speed, Core Web Vitals, and SEO in 2025.",
+        "twitter_image": "/images/blog/nextjs-performance-2025.webp"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-14",
+      "date_modified": "2025-08-14",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "Full Stack Developer specializing in React and Next.js optimization."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "Next.js Performance Optimization Best Practices 2025",
+      "excerpt": "Boost Next.js performance with advanced optimization strategies tailored for 2025 Core Web Vitals requirements.",
+      "reading_time_minutes": "11",
+      "word_count": "2300",
+      "featured_image": {
+        "src": "/images/blog/nextjs-performance-2025.webp",
+        "alt": "Next.js performance optimization",
+        "caption": "Performance tips for Next.js applications in 2025"
+      }
+    },
+    "content": {
+      "introduction": "Next.js offers powerful performance features, but without proper optimization, your app can still lag. Here's how to fine-tune it for 2025.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "Optimize Images with next/image",
+          "heading_tag": "h2",
+          "content": "Use automatic image optimization and WebP formats for better performance."
+        },
+        {
+          "heading": "Implement Server-Side Caching",
+          "heading_tag": "h2",
+          "content": "Reduce server response time using smart caching strategies and edge functions."
+        },
+        {
+          "heading": "Bundle Size Reduction",
+          "heading_tag": "h2",
+          "content": "Use code splitting and dynamic imports to keep bundle sizes minimal."
+        }
+      ],
+      "conclusion": "By following these best practices, you'll ensure your Next.js app loads fast and meets Google's performance benchmarks.",
+      "faq": [
+        {
+          "question": "Does Next.js automatically optimize performance?",
+          "answer": "It includes optimizations, but manual tuning is necessary for best results."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Next.js Performance Optimization Best Practices 2025",
+      "image": [
+        "https://trxsolutions.in/images/blog/nextjs-performance-2025.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-14",
+      "dateModified": "2025-08-14",
+      "description": "Master Next.js performance optimization in 2025 with advanced strategies for faster load times, Core Web Vitals, and server-side efficiency."
+    }
+  },
+  {
+    "meta": {
+      "meta_title": "E-E-A-T SEO Strategies for 2025: Build Trust and Rank Higher | TRX Solutions",
+      "meta_description": "Learn advanced E-E-A-T SEO strategies in 2025 to improve your site's authority, trustworthiness, and Google rankings.",
+      "canonical_url": "https://trxsolutions.in/blog/e-e-a-t-seo-strategies-2025",
+      "robots": "index,follow"
+    },
+    "seo": {
+      "primary_keyword": "E-E-A-T SEO strategies 2025",
+      "secondary_keywords": ["Google E-E-A-T", "SEO authority building", "trust signals SEO"],
+      "slug": "e-e-a-t-seo-strategies-2025",
+      "language": "en",
+      "hreflang": []
+    },
+    "social": {
+      "og": {
+        "og_title": "E-E-A-T SEO Strategies for 2025",
+        "og_description": "Improve your Google rankings in 2025 with E-E-A-T strategies focused on expertise, authority, trust, and experience.",
+        "og_image": "/images/blog/e-e-a-t-seo-2025.webp",
+        "og_url": "https://trxsolutions.in/blog/e-e-a-t-seo-strategies-2025",
+        "og_type": "article"
+      },
+      "twitter": {
+        "twitter_card": "summary_large_image",
+        "twitter_title": "E-E-A-T SEO Strategies for 2025",
+        "twitter_description": "Improve your Google rankings in 2025 with E-E-A-T strategies focused on expertise, authority, trust, and experience.",
+        "twitter_image": "/images/blog/e-e-a-t-seo-2025.webp"
+      }
+    },
+    "publish_info": {
+      "date_published": "2025-08-14",
+      "date_modified": "2025-08-14",
+      "author": {
+        "name": "Ritesh Kumar",
+        "profile_url": "https://trxsolutions.in/author/ritesh-kumar",
+        "bio": "SEO strategist helping brands improve authority and trust signals."
+      },
+      "publisher": {
+        "name": "TRX Solutions",
+        "logo": "/images/logo.png"
+      }
+    },
+    "page_info": {
+      "h1": "E-E-A-T SEO Strategies for 2025",
+      "excerpt": "Boost your site's authority and rankings with these proven E-E-A-T SEO strategies in 2025.",
+      "reading_time_minutes": "10",
+      "word_count": "2100",
+      "featured_image": {
+        "src": "/images/blog/e-e-a-t-seo-2025.webp",
+        "alt": "E-E-A-T SEO strategies",
+        "caption": "Boost Google rankings with E-E-A-T strategies"
+      }
+    },
+    "content": {
+      "introduction": "Google's E-E-A-T guidelines are more important than ever in 2025. Here's how to implement them effectively.",
+      "table_of_contents": true,
+      "sections": [
+        {
+          "heading": "Showcasing Experience",
+          "heading_tag": "h2",
+          "content": "Use real-life examples, case studies, and testimonials to demonstrate your expertise."
+        },
+        {
+          "heading": "Building Authority",
+          "heading_tag": "h2",
+          "content": "Earn backlinks from reputable sources and publish high-quality research."
+        },
+        {
+          "heading": "Enhancing Trust Signals",
+          "heading_tag": "h2",
+          "content": "Implement HTTPS, display author bios, and ensure transparent business information."
+        }
+      ],
+      "conclusion": "Applying these E-E-A-T strategies will help your site stand out in competitive niches and maintain long-term rankings.",
+      "faq": [
+        {
+          "question": "Is E-E-A-T a ranking factor?",
+          "answer": "It's not a direct ranking factor, but it influences how Google evaluates quality and trustworthiness."
+        }
+      ]
+    },
+    "schema_ld": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "E-E-A-T SEO Strategies for 2025",
+      "image": [
+        "https://trxsolutions.in/images/blog/e-e-a-t-seo-2025.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Ritesh Kumar",
+        "url": "https://trxsolutions.in/author/ritesh-kumar"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TRX Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://trxsolutions.in/images/logo.png"
+        }
+      },
+      "datePublished": "2025-08-14",
+      "dateModified": "2025-08-14",
+      "description": "Learn advanced E-E-A-T SEO strategies in 2025 to improve your site's authority, trustworthiness, and Google rankings."
+    }
+  }
+]
