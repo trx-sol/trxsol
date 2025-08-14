@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "title": "MonarkFX - Global Trading Excellence",
+        "image": "/monark.png",
+        "description": "Join MonarkFX - Global Trading Excellence - A premier institute dedicated to teaching stock market trading, forex trading, and cryptocurrency trading. Experience professional trading education with expert mentorship and real-time market analysis.",
+        "link": "https://monarkfx.com",
+        "technologies": ["React Js", "Next Js", "Node Js", "Postgresql", "Zoom SDK", "RazorPay SDK", "Tailwind CSS", "Framer Motion"],
+        "category": "LMS"
+    }
+]
