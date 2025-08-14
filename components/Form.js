@@ -90,14 +90,47 @@ const Form = ({ align = "center" }) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Log form data to console
-    console.log("=== FORM SUBMISSION ===");
-    console.log("Name:", formData.name);
-    console.log("Email:", formData.email);
-    console.log("Phone:", formData.phone);
-    console.log("Website Type:", formData.websiteType);
-    console.log("Requirements:", formData.requirements);
-    console.log("Submission Time:", new Date().toLocaleString());
+    try {
+      const response = await fetch('/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          websiteType: formData.websiteType,
+          submissionTime: new Date().toLocaleString('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+          }),
+          message: `Requirements:\n${formData.requirements}`,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          websiteType: "",
+          requirements: "",
+        });
+      } else {
+        throw new Error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Failed to submit form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
     console.log("======================");
 
     // Simulate API call delay
@@ -122,9 +155,8 @@ const Form = ({ align = "center" }) => {
   if (isSubmitted) {
     return (
       <Card
-        className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${
-          align === "left" ? "" : "mx-auto"
-        } hover:shadow-trx-cyan/30 transition-all duration-300`}
+        className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${align === "left" ? "" : "mx-auto"
+          } hover:shadow-trx-cyan/30 transition-all duration-300`}
       >
         <CardContent
           className={`${align === "left" ? "text-left" : "text-center"} py-12`}
@@ -137,16 +169,7 @@ const Form = ({ align = "center" }) => {
           <p className="text-sm text-gray-500">
             We&apos;ll get back to you within 24 hours with a custom proposal.
           </p>
-          <div className="mt-6">
-            <div
-              className={`flex items-center ${
-                align === "left" ? "justify-start" : "justify-center"
-              } space-x-2 text-trx-cyan`}
-            >
-              <Send className="w-4 h-4" />
-              <span className="text-sm">Email sent to: {formData.email}</span>
-            </div>
-          </div>
+
         </CardContent>
       </Card>
     );
@@ -154,9 +177,8 @@ const Form = ({ align = "center" }) => {
 
   return (
     <Card
-      className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${
-        align === "left" ? "" : "mx-auto"
-      } hover:shadow-trx-cyan/30 transition-all duration-300`}
+      className={`bg-black/50 border border-trx-purple/30 backdrop-blur-lg shadow-xl w-full max-w-md ${align === "left" ? "" : "mx-auto"
+        } hover:shadow-trx-cyan/30 transition-all duration-300`}
     >
       <CardHeader
         className={`${align === "left" ? "text-left" : "text-center"} pb-4`}
