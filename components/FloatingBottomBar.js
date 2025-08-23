@@ -1,14 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { FiPhone, FiMessageCircle } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function FloatingBottomBar() {
   const [showCallDialog, setShowCallDialog] = useState(false);
   const [showWhatsAppDialog, setShowWhatsAppDialog] = useState(false);
-  const [selectedPhone, setSelectedPhone] = useState("");
-  const [selectedWhatsApp, setSelectedWhatsApp] = useState("");
 
   const phoneNumbers = [
     {
