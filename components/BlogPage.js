@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
 import HeadText from "./Head-text";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import { ArrowRight, Calendar, Clock, User, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function BlogPage() {
   const [blogs, setBlogs] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const router = useRouter();
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -70,8 +70,8 @@ export default function BlogPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${category === selectedCategory
-                    ? "bg-gradient-to-r from-trx-purple to-trx-cyan text-white"
-                    : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
+                  ? "bg-gradient-to-r from-trx-purple to-trx-cyan text-white"
+                  : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
                   }`}
               >
                 {category}
@@ -96,23 +96,12 @@ export default function BlogPage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ delay: index * 0.1 }}
-                className="group"
+                className="group cursor-pointer"
+                onClick={() => router.push(`/blog/${blog.seo.slug}`)}
               >
-                <Card className="h-full bg-gray-800/50 border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
-                  <Link href={`/blog/${blog.seo.slug}`}>
-                    <div className="relative h-48 w-full overflow-hidden rounded-t-xl">
-                      <Image
-                        src={blog.page_info.featured_image.src}
-                        alt={blog.page_info.featured_image.alt}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                  </Link>
-
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
+                <Card className="h-full bg-gradient-to-br from-gray-900/80 to-black/80 border-none shadow-xl rounded-2xl overflow-hidden group-hover:scale-[1.03] group-hover:shadow-2xl transition-all duration-300">
+                  <CardContent className="p-7 flex flex-col h-full">
+                    <div className="flex items-center gap-4 text-xs text-gray-400 mb-2">
                       <div className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
                         <span>{new Date(blog.publish_info.date_published).toLocaleDateString()}</span>
@@ -122,29 +111,27 @@ export default function BlogPage() {
                         <span>{blog.page_info.reading_time_minutes} min read</span>
                       </div>
                     </div>
-
-                    <Link href={`/blog/${blog.seo.slug}`}>
-                      <h2 className="text-xl font-semibold text-white hover:text-cyan-400 transition-colors mb-3 line-clamp-2">
-                        {blog.page_info.h1}
-                      </h2>
-                    </Link>
-
-                    <p className="text-gray-400 line-clamp-3 mb-4">
+                    <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors line-clamp-2">
+                      {blog.page_info.h1}
+                    </h2>
+                    <p className="text-gray-300 line-clamp-3 mb-4 text-base">
                       {blog.content.introduction}
                     </p>
-
-                    <div className="flex items-center justify-between mt-6">
+                    <div className="flex flex-wrap gap-2 mb-4 mt-auto">
+                      {blog.seo.secondary_keywords.slice(0, 3).map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full bg-cyan-600/10 text-cyan-400 font-medium border border-cyan-700/30"
+                        >
+                          <Tag className="w-3 h-3" />
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between mt-2">
                       <div className="flex items-center gap-3">
-                        <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-700">
-                          <Image
-                            src={blog.publish_info.publisher.logo}
-                            alt={blog.publish_info.author.name}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
                         <div>
-                          <p className="text-white font-medium text-sm">
+                          <p className="text-white font-semibold text-sm">
                             {blog.publish_info.author.name}
                           </p>
                           <p className="text-gray-400 text-xs">
@@ -152,29 +139,16 @@ export default function BlogPage() {
                           </p>
                         </div>
                       </div>
-
                       <Button
                         variant="link"
-                        className="text-cyan-400 hover:text-cyan-300 p-0"
+                        className="text-cyan-400 hover:text-cyan-300 p-0 font-semibold"
                         asChild
                       >
-                        <Link href={`/blog/${blog.seo.slug}`} className="flex items-center gap-1">
+                        <span className="flex items-center gap-1">
                           Read More
                           <ArrowRight className="w-4 h-4" />
-                        </Link>
-                      </Button>
-                    </div>
-
-                    <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-700">
-                      {blog.seo.secondary_keywords.slice(0, 3).map((tag, idx) => (
-                        <span
-                          key={idx}
-                          className="inline-flex items-center gap-1 px-2 py-1 text-xs rounded-full bg-gray-700 text-gray-300"
-                        >
-                          <Tag className="w-3 h-3" />
-                          {tag}
                         </span>
-                      ))}
+                      </Button>
                     </div>
                   </CardContent>
                 </Card>

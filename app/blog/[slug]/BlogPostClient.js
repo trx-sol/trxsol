@@ -34,24 +34,23 @@ export default function BlogPostClient({ blog }) {
             <StructuredData data={blog.schema_ld} />
 
             <article className="min-h-screen bg-black">
-                {/* Hero Section */}
+                {/* Themed Blog Banner (no blog image) */}
                 <motion.section
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="relative h-[60vh] min-h-[400px]"
+                    className="relative h-[60vh] min-h-[400px] flex items-center justify-center bg-gradient-to-br from-trx-purple via-black to-trx-cyan"
                 >
-                    <Image
-                        src={blog.page_info.featured_image.src}
-                        alt={blog.page_info.featured_image.alt}
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-black/50" />
-                    <div className="absolute inset-0 flex items-center justify-center">
+                    {/* Optional: Add a SVG or icon for visual interest */}
+                    <div className="absolute inset-0 opacity-20 pointer-events-none select-none flex items-center justify-center">
+                        <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="160" cy="160" r="120" fill="#06b6d4" fillOpacity="0.15" />
+                            <circle cx="160" cy="160" r="80" fill="#a21caf" fillOpacity="0.12" />
+                        </svg>
+                    </div>
+                    <div className="relative z-10 w-full">
                         <div className="container px-4">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-4">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-4 drop-shadow-lg">
                                 {blog.page_info.h1}
                             </h1>
                             <div className="flex flex-wrap items-center justify-center gap-4 text-white/80">

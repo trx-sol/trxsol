@@ -191,21 +191,22 @@ export default function ServiceDetailClient({ service }) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                  <Card className="glass-effect border border-trx-purple/20 bg-black/40 backdrop-blur-sm hover:border-trx-cyan/40 transition-all duration-300">
-                    <CardContent className="p-8 text-center">
-                      <h3 className="text-2xl font-bold text-white mb-4">
+                  <Card className="glass-effect border-0 bg-gradient-to-br from-trx-purple/30 via-black/60 to-trx-cyan/30 shadow-2xl rounded-2xl transition-all duration-300">
+                    <CardContent className="p-10 text-center flex flex-col items-center">
+                      <h3 className="text-3xl font-extrabold text-white mb-3 tracking-tight drop-shadow-lg">
                         Ready to Get Started?
                       </h3>
-                      <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                        Let&apos;s discuss your project and create something
-                        amazing together.
+                      <p className="text-gray-200 mb-8 text-lg leading-relaxed max-w-xl">
+                        Let&apos;s discuss your project and create something amazing together. Our experts are ready to help you grow.
                       </p>
-                      <Button
-                        onClick={() => setIsConsultationOpen(true)}
-                        className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 w-full shadow-lg shadow-trx-cyan/25"
-                      >
-                        Get Free Consultation
-                      </Button>
+                      <Link href="/contact" passHref legacyBehavior>
+                        <Button
+                          as="a"
+                          className="bg-gradient-to-r from-trx-purple to-trx-cyan hover:from-trx-purple/90 hover:to-trx-cyan/90 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-trx-cyan/25 focus:ring-4 focus:ring-trx-cyan/40 focus:outline-none"
+                        >
+                          Get Free Consultation
+                        </Button>
+                      </Link>
                     </CardContent>
                   </Card>
                 </motion.div>
