@@ -33,6 +33,17 @@ const Form = ({ align = "center" }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [typeTab, setTypeTab] = useState("website"); // "website" or "service"
+
+  // Services from services.json
+  const services = [
+    { value: "website-designing", label: "Website Designing" },
+    { value: "digital-marketing", label: "Digital Marketing" },
+    { value: "graphic-designing", label: "Graphic Designing" },
+    { value: "app-development", label: "App Development" },
+    { value: "seo-optimization", label: "SEO Optimization" },
+    { value: "social-media-management", label: "Social Media Management" },
+  ];
 
   const websiteTypes = [
     {
@@ -84,7 +95,13 @@ const Form = ({ align = "center" }) => {
       ...prev,
       [field]: value,
     }));
-  };
+  }
+
+  // When switching tab, reset websiteType
+  const handleTabChange = (tab) => {
+    setTypeTab(tab);
+    setFormData((prev) => ({ ...prev, websiteType: "" }));
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -233,40 +250,65 @@ const Form = ({ align = "center" }) => {
             />
           </div>
           <div>
-            <Label className="text-white text-sm font-medium">
-              What type of website do you need?{" "}
-              <span className="text-gray-500">*</span>
+            <Label className="text-white text-sm font-medium mb-2 block">
+              What type of service do you need? <span className="text-gray-500">*</span>
             </Label>
+            <div className="flex gap-2 mb-2">
+              <button
+                type="button"
+                className={`px-4 py-1 rounded-full text-sm font-semibold transition-all duration-200 border ${typeTab === "website" ? "bg-gradient-to-r from-trx-purple to-trx-cyan text-white border-trx-cyan" : "bg-black/30 text-gray-300 border-trx-purple/30 hover:bg-black/50"}`}
+                onClick={() => handleTabChange("website")}
+              >
+                Website Types
+              </button>
+              <button
+                type="button"
+                className={`px-4 py-1 rounded-full text-sm font-semibold transition-all duration-200 border ${typeTab === "service" ? "bg-gradient-to-r from-trx-purple to-trx-cyan text-white border-trx-cyan" : "bg-black/30 text-gray-300 border-trx-purple/30 hover:bg-black/50"}`}
+                onClick={() => handleTabChange("service")}
+              >
+                Services
+              </button>
+            </div>
             <Select
               value={formData.websiteType}
               onValueChange={(value) => handleInputChange("websiteType", value)}
+              required
             >
               <SelectTrigger className="bg-black/30 text-white border-trx-purple/30 focus:border-trx-cyan transition-colors mt-1">
-                <SelectValue placeholder="Choose your website type" />
+                <SelectValue placeholder={typeTab === "website" ? "Choose your website type" : "Choose a service"} />
               </SelectTrigger>
               <SelectContent className="bg-black text-white border border-trx-purple/30 max-h-60">
-                {websiteTypes.map((type) => {
-                  const IconComponent = type.icon;
-                  return (
+                {typeTab === "website"
+                  ? websiteTypes.map((type) => {
+                    const IconComponent = type.icon;
+                    return (
+                      <SelectItem
+                        key={type.value}
+                        value={type.label}
+                        className="py-2"
+                      >
+                        <div className="flex items-center space-x-3">
+                          <IconComponent className="w-4 h-4 text-trx-cyan flex-shrink-0" />
+                          <div className="min-w-0">
+                            <div className="font-medium text-sm">{type.label}</div>
+                            <div className="text-xs text-gray-400 truncate">{type.description}</div>
+                          </div>
+                        </div>
+                      </SelectItem>
+                    );
+                  })
+                  : services.map((service) => (
                     <SelectItem
-                      key={type.value}
-                      value={type.value}
+                      key={service.value}
+                      value={service.label}
                       className="py-2"
                     >
                       <div className="flex items-center space-x-3">
-                        <IconComponent className="w-4 h-4 text-trx-cyan flex-shrink-0" />
-                        <div className="min-w-0">
-                          <div className="font-medium text-sm">
-                            {type.label}
-                          </div>
-                          <div className="text-xs text-gray-400 truncate">
-                            {type.description}
-                          </div>
-                        </div>
+                        <span className="w-4 h-4 bg-trx-cyan/30 rounded-full inline-block" />
+                        <div className="font-medium text-sm">{service.label}</div>
                       </div>
                     </SelectItem>
-                  );
-                })}
+                  ))}
               </SelectContent>
             </Select>
           </div>

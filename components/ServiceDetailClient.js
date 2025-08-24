@@ -169,8 +169,8 @@ export default function ServiceDetailClient({ service }) {
                                 <Star
                                   key={i}
                                   className={`w-4 h-4 ${i < service.rating
-                                      ? "text-yellow-400 fill-current"
-                                      : "text-gray-600"
+                                    ? "text-yellow-400 fill-current"
+                                    : "text-gray-600"
                                     }`}
                                 />
                               ))}
