@@ -21,20 +21,20 @@ export default function Footer() {
 
   const footerLinks = {
     services: [
-      { name: "Website Design", href: "/services/website-design" },
+      { name: "Website Design", href: "/services/website-designing" },
       { name: "Web Development", href: "/services/web-development" },
-      { name: "E-commerce", href: "/services/ecommerce" },
-      { name: "SEO Services", href: "/services/seo" },
+      { name: "Graphic Design", href: "/services/graphic-designing" },
       { name: "Digital Marketing", href: "/services/digital-marketing" },
-      { name: "Mobile Apps", href: "/services/mobile-apps" },
+      { name: "App Development", href: "/services/app-development" },
+      { name: "SEO Services", href: "/services/seo-optimization" },
+      { name: "Social Media Management", href: "/services/social-media-management" }
+
     ],
     company: [
       { name: "About Us", href: "/about" },
       { name: "Portfolio", href: "/portfolio" },
-      { name: "Testimonials", href: "/#testimonials" },
       { name: "Contact", href: "/contact" },
       { name: "Blog", href: "/blog" },
-      { name: "FAQ", href: "/#faq" },
     ],
   };
 
@@ -238,12 +238,7 @@ export default function Footer() {
             >
               Cookie Policy
             </Link>
-            <Link
-              href="/sitemap"
-              className="text-gray-400 hover:text-trx-cyan transition-colors text-sm"
-            >
-              Sitemap
-            </Link>
+
           </div>
         </div>
       </div>

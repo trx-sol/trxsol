@@ -23,7 +23,7 @@ export default function ServiceDetailClient({ service }) {
           align="left"
           title={
             <>
-              {service.title}
+              {service.title}{" "}
               <span className="gradient-text bg-gradient-to-r from-trx-purple to-trx-cyan bg-clip-text text-transparent">
                 Services
               </span>
@@ -168,11 +168,10 @@ export default function ServiceDetailClient({ service }) {
                               {[...Array(5)].map((_, i) => (
                                 <Star
                                   key={i}
-                                  className={`w-4 h-4 ${
-                                    i < service.rating
+                                  className={`w-4 h-4 ${i < service.rating
                                       ? "text-yellow-400 fill-current"
                                       : "text-gray-600"
-                                  }`}
+                                    }`}
                                 />
                               ))}
                               <span className="text-white font-semibold ml-2">
