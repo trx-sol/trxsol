@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import StructuredData from "@/components/StructuredData";
 import FloatingBottomBar from "@/components/FloatingBottomBar";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   metadataBase: new URL("https://trxsol.com"),
@@ -106,6 +107,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <FloatingBottomBar />
+        <Analytics />
       </body>
     </html>
   );
