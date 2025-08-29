@@ -56,7 +56,7 @@ export async function POST(request) {
     <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
         <!-- Header -->
         <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 30px; text-align: center;">
-            <img src="${emailConfig.domain}/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin-bottom: 15px;">
+            <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin-bottom: 15px;">
             <h1 style="color: white; margin: 0; font-size: 24px;">🌟 New Website Inquiry</h1>
             <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">TRX Sol Web Development</p>
         </div>
@@ -143,7 +143,7 @@ export async function POST(request) {
     <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
         <!-- Header with Logo Area -->
         <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 40px 30px; text-align: center;">
-            <img src="${emailConfig.domain}/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin: 0 auto 20px;">
+            <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin: 0 auto 20px;">
             <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">Thank You!</h1>
             <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">We've received your inquiry</p>
         </div>
