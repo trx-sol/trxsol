@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
 
         if (!blog) {
             return {
-                title: "Blog Post Not Found | TRX Solutions",
+                title: "Blog Post Not Found | TRX Sol",
                 description: "The requested blog post could not be found.",
                 robots: { index: false, follow: false }
             };
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
         const { meta, social, page_info, seo } = blog;
 
         return {
-            metadataBase: new URL('https://trxsolutions.in'),
+            metadataBase: new URL('https://trxsol.com'),
             title: meta.meta_title,
             description: meta.meta_description,
             alternates: {
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
                         alt: page_info.featured_image.alt,
                     },
                 ],
-                siteName: "TRX Solutions",
+                siteName: "TRX Sol",
             },
             twitter: {
                 card: social.twitter.twitter_card,
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }) {
     } catch (error) {
         console.error('Error generating metadata:', error);
         return {
-            title: "Blog - TRX Solutions",
+            title: "Blog - TRX Sol",
             description: "Read our latest blog posts about web development, SEO, and digital solutions.",
             robots: { index: false, follow: false }
         };

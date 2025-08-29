@@ -1,9 +1,9 @@
 [
   {
     "meta": {
-      "meta_title": "Advanced SEO Blog Checklist for 2025 | TRX Solutions",
+      "meta_title": "Advanced SEO Blog Checklist for 2025 | TRX Sol",
       "meta_description": "A step-by-step SEO checklist for 2025 covering metadata, headings, internal links, images, schema, Core Web Vitals, and E-E-A-T for higher Google rankings.",
-      "canonical_url": "https://trxsolutions.in/blog/advanced-seo-blog-checklist-2025",
+      "canonical_url": "https://trxsol.com/blog/advanced-seo-blog-checklist-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -17,8 +17,8 @@
       "og": {
         "og_title": "Advanced SEO Blog Checklist for 2025",
         "og_description": "Complete SEO checklist for blogs to rank higher in 2025—metadata, headings, images, links, schema, and Core Web Vitals.",
-        "og_image": "/api/blog-image?title=Advanced%20SEO%20Blog%20Checklist%20for%202025",
-        "og_url": "https://trxsolutions.in/blog/advanced-seo-blog-checklist-2025",
+ 
+        "og_url": "https://trxsol.com/blog/advanced-seo-blog-checklist-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -36,7 +36,7 @@
         "bio": "Full Stack Developer & SEO Specialist (India) helping brands grow with data-driven strategies."
       },
       "publisher": {
-        "name": "TRX Solutions",
+        "name": "TRX Sol",
         "logo": "/images/logo.png"
       }
     },
@@ -116,9 +116,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Advanced SEO Blog Checklist for 2025",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Advanced%20SEO%20Blog%20Checklist%20for%202025" ],
-      "author": { "@type": "Person", "name": "Ritesh Kumar", "url": "https://trxsolutions.in/author/ritesh-kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "image": [ "https://trxsol.com/api/blog-image?title=Advanced%20SEO%20Blog%20Checklist%20for%202025" ],
+      "author": { "@type": "Person", "name": "Ritesh Kumar", "url": "https://trxsol.com/author/ritesh-kumar" },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-11",
       "dateModified": "2025-08-24",
       "description": "A 2025-ready blog SEO checklist covering metadata, headings, links, images, schema, and Core Web Vitals."
@@ -126,9 +126,9 @@
   },
   {
     "meta": {
-      "meta_title": "10 Next.js 14 Features That Will Transform Your Web Development | TRX Solutions",
+      "meta_title": "10 Next.js 14 Features That Will Transform Your Web Development | TRX Sol",
       "meta_description": "Explore Next.js 14 features like Server Actions, Partial Rendering, and Turbopack improvements that supercharge developer experience in 2025.",
-      "canonical_url": "https://trxsolutions.in/blog/nextjs-14-features-transform-web-development",
+      "canonical_url": "https://trxsol.com/blog/nextjs-14-features-transform-web-development",
       "robots": "index,follow"
     },
     "seo": {
@@ -143,7 +143,7 @@
         "og_title": "10 Next.js 14 Features That Will Transform Your Web Development",
         "og_description": "From Server Actions to Partial Rendering and faster dev builds—discover the highlights of Next.js 14.",
         "og_image": "/api/blog-image?title=10%20Next.js%2014%20Features",
-        "og_url": "https://trxsolutions.in/blog/nextjs-14-features-transform-web-development",
+        "og_url": "https://trxsol.com/blog/nextjs-14-features-transform-web-development",
         "og_type": "article"
       },
       "twitter": {
@@ -160,7 +160,7 @@
         "name": "Ritesh Kumar",
         "bio": "Full Stack Developer (India) specializing in Next.js and React apps."
       },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "10 Next.js 14 Features That Will Transform Your Web Development",
@@ -168,7 +168,7 @@
       "reading_time_minutes": "14",
       "word_count": "2600",
       "featured_image": {
-        "src": "/api/blog-image?title=10%20Next.js%2014%20Features",
+         "src": "/api/blog-image?title=10%20Next.js%2014%20Features",
         "alt": "Next.js 14 New Features Overview",
         "caption": "Highlights of Next.js 14 for modern apps"
       }
@@ -196,9 +196,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "10 Next.js 14 Features That Will Transform Your Web Development",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=10%20Next.js%2014%20Features" ],
+  
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-10",
       "dateModified": "2025-08-24",
       "description": "A practical overview of the most impactful Next.js 14 features for 2025."
@@ -206,9 +206,9 @@
   },
   {
     "meta": {
-      "meta_title": "Website Performance Optimization Guide 2025: Speed Up Your Site | TRX Solutions",
+      "meta_title": "Website Performance Optimization Guide 2025: Speed Up Your Site | TRX Sol",
       "meta_description": "Master website speed in 2025: Core Web Vitals, caching, CDNs, JS optimization, image strategy, and monitoring for blazing-fast UX.",
-      "canonical_url": "https://trxsolutions.in/blog/website-performance-optimization-guide-2025",
+      "canonical_url": "https://trxsol.com/blog/website-performance-optimization-guide-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -223,7 +223,7 @@
         "og_title": "Website Performance Optimization Guide 2025",
         "og_description": "Practical tactics to pass Core Web Vitals and load fast—on any network.",
         "og_image": "/api/blog-image?title=Website%20Performance%20Optimization%20Guide%202025",
-        "og_url": "https://trxsolutions.in/blog/website-performance-optimization-guide-2025",
+        "og_url": "https://trxsol.com/blog/website-performance-optimization-guide-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -237,7 +237,7 @@
       "date_published": "2025-08-13",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Performance-focused Full Stack Developer (India)." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Website Performance Optimization Guide 2025",
@@ -271,9 +271,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Website Performance Optimization Guide 2025",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Website%20Performance%20Optimization%20Guide%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Website%20Performance%20Optimization%20Guide%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-13",
       "dateModified": "2025-08-24",
       "description": "Core Web Vitals and speed tactics for 2025."
@@ -281,9 +281,9 @@
   },
   {
     "meta": {
-      "meta_title": "Top 7 AI SEO Tools for 2025 to Skyrocket Rankings | TRX Solutions",
+      "meta_title": "Top 7 AI SEO Tools for 2025 to Skyrocket Rankings | TRX Sol",
       "meta_description": "The best AI SEO tools in 2025 for keyword research, content optimization, clustering, and link outreach to boost rankings faster.",
-      "canonical_url": "https://trxsolutions.in/blog/ai-seo-tools-2025",
+      "canonical_url": "https://trxsol.com/blog/ai-seo-tools-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -298,7 +298,7 @@
         "og_title": "Top 7 AI SEO Tools for 2025",
         "og_description": "Automate research, optimization, and outreach with these AI-powered tools.",
         "og_image": "/api/blog-image?title=Top%207%20AI%20SEO%20Tools%20for%202025",
-        "og_url": "https://trxsolutions.in/blog/ai-seo-tools-2025",
+        "og_url": "https://trxsol.com/blog/ai-seo-tools-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -312,7 +312,7 @@
       "date_published": "2025-08-14",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer & SEO Specialist (India), AI-first growth." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Top 7 AI SEO Tools for 2025",
@@ -344,9 +344,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Top 7 AI SEO Tools for 2025",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Top%207%20AI%20SEO%20Tools%20for%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Top%207%20AI%20SEO%20Tools%20for%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-14",
       "dateModified": "2025-08-24",
       "description": "AI tools to automate the most time-consuming parts of SEO."
@@ -354,9 +354,9 @@
   },
   {
     "meta": {
-      "meta_title": "Next.js Performance Optimization Best Practices 2025 | TRX Solutions",
+      "meta_title": "Next.js Performance Optimization Best Practices 2025 | TRX Sol",
       "meta_description": "Advanced Next.js performance tactics in 2025: image pipeline, server-side caching, bundle trimming, and edge-first architectures.",
-      "canonical_url": "https://trxsolutions.in/blog/nextjs-performance-optimization-2025",
+      "canonical_url": "https://trxsol.com/blog/nextjs-performance-optimization-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -371,7 +371,7 @@
         "og_title": "Next.js Performance Optimization Best Practices 2025",
         "og_description": "Ship fast by default with these Next.js patterns.",
         "og_image": "/api/blog-image?title=Next.js%20Performance%20Optimization%202025",
-        "og_url": "https://trxsolutions.in/blog/nextjs-performance-optimization-2025",
+        "og_url": "https://trxsol.com/blog/nextjs-performance-optimization-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -385,7 +385,7 @@
       "date_published": "2025-08-14",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer (India) optimizing React/Next.js at scale." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Next.js Performance Optimization Best Practices 2025",
@@ -416,9 +416,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Next.js Performance Optimization Best Practices 2025",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Next.js%20Performance%20Optimization%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Next.js%20Performance%20Optimization%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-14",
       "dateModified": "2025-08-24",
       "description": "A hands-on Next.js speed guide for 2025."
@@ -426,9 +426,9 @@
   },
   {
     "meta": {
-      "meta_title": "E-E-A-T SEO Strategies for 2025: Build Trust and Rank Higher | TRX Solutions",
+      "meta_title": "E-E-A-T SEO Strategies for 2025: Build Trust and Rank Higher | TRX Sol",
       "meta_description": "Implement E-E-A-T in 2025 with author credentials, firsthand experience, citations, transparent policies, and reputation-building tactics.",
-      "canonical_url": "https://trxsolutions.in/blog/e-e-a-t-seo-strategies-2025",
+      "canonical_url": "https://trxsol.com/blog/e-e-a-t-seo-strategies-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -443,7 +443,7 @@
         "og_title": "E-E-A-T SEO Strategies for 2025",
         "og_description": "From experience-led content to transparent brand signals—how to win trust.",
         "og_image": "/api/blog-image?title=E-E-A-T%20SEO%20Strategies%202025",
-        "og_url": "https://trxsolutions.in/blog/e-e-a-t-seo-strategies-2025",
+        "og_url": "https://trxsol.com/blog/e-e-a-t-seo-strategies-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -457,7 +457,7 @@
       "date_published": "2025-08-14",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "SEO strategist & Full Stack Developer (India)." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "E-E-A-T SEO Strategies for 2025",
@@ -488,9 +488,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "E-E-A-T SEO Strategies for 2025",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=E-E-A-T%20SEO%20Strategies%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=E-E-A-T%20SEO%20Strategies%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-14",
       "dateModified": "2025-08-24",
       "description": "A hands-on E-E-A-T roadmap for 2025."
@@ -498,9 +498,9 @@
   },
   {
     "meta": {
-      "meta_title": "Local SEO in India 2025: Rank in Your City and Win Customers | TRX Solutions",
+      "meta_title": "Local SEO in India 2025: Rank in Your City and Win Customers | TRX Sol",
       "meta_description": "A practical guide to Local SEO for Indian businesses in 2025—GBP optimization, citations, reviews, local content, and NAP consistency.",
-      "canonical_url": "https://trxsolutions.in/blog/local-seo-india-2025",
+      "canonical_url": "https://trxsol.com/blog/local-seo-india-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -515,7 +515,7 @@
         "og_title": "Local SEO in India 2025: Rank in Your City and Win Customers",
         "og_description": "Get found on Maps and local SERPs with this India-focused guide.",
         "og_image": "/api/blog-image?title=Local%20SEO%20in%20India%202025",
-        "og_url": "https://trxsolutions.in/blog/local-seo-india-2025",
+        "og_url": "https://trxsol.com/blog/local-seo-india-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -529,7 +529,7 @@
       "date_published": "2025-08-24",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer & SEO Specialist (India), local growth playbooks." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Local SEO in India 2025: Rank in Your City and Win Customers",
@@ -561,9 +561,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Local SEO in India 2025: Rank in Your City and Win Customers",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Local%20SEO%20in%20India%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Local%20SEO%20in%20India%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-24",
       "dateModified": "2025-08-24",
       "description": "The India-focused Local SEO playbook for 2025."
@@ -571,9 +571,9 @@
   },
   {
     "meta": {
-      "meta_title": "Core Web Vitals 2025: Practical Guide for Indian Websites | TRX Solutions",
+      "meta_title": "Core Web Vitals 2025: Practical Guide for Indian Websites | TRX Sol",
       "meta_description": "A practical Core Web Vitals guide for 2025 with Indian network realities: LCP, INP, and CLS fixes that actually hold up in production.",
-      "canonical_url": "https://trxsolutions.in/blog/core-web-vitals-2025-india-guide",
+      "canonical_url": "https://trxsol.com/blog/core-web-vitals-2025-india-guide",
       "robots": "index,follow"
     },
     "seo": {
@@ -588,7 +588,7 @@
         "og_title": "Core Web Vitals 2025: Practical Guide for Indian Websites",
         "og_description": "Actionable fixes for LCP, INP, and CLS under Indian networks and devices.",
         "og_image": "/api/blog-image?title=Core%20Web%20Vitals%202025%20Guide",
-        "og_url": "https://trxsolutions.in/blog/core-web-vitals-2025-india-guide",
+        "og_url": "https://trxsol.com/blog/core-web-vitals-2025-india-guide",
         "og_type": "article"
       },
       "twitter": {
@@ -602,7 +602,7 @@
       "date_published": "2025-08-24",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer (India) focused on performance and SEO." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Core Web Vitals 2025: Practical Guide for Indian Websites",
@@ -633,9 +633,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Core Web Vitals 2025: Practical Guide for Indian Websites",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Core%20Web%20Vitals%202025%20Guide" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Core%20Web%20Vitals%202025%20Guide" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-24",
       "dateModified": "2025-08-24",
       "description": "A field-tested CWV guide tailored for Indian users."
@@ -643,9 +643,9 @@
   },
   {
     "meta": {
-      "meta_title": "Technical SEO Audit Template 2025: Step-by-Step Checklist | TRX Solutions",
+      "meta_title": "Technical SEO Audit Template 2025: Step-by-Step Checklist | TRX Sol",
       "meta_description": "Download a practical technical SEO audit template for 2025 with crawlability, indexation, rendering, schema, and speed checks.",
-      "canonical_url": "https://trxsolutions.in/blog/technical-seo-audit-template-2025",
+      "canonical_url": "https://trxsol.com/blog/technical-seo-audit-template-2025",
       "robots": "index,follow"
     },
     "seo": {
@@ -660,7 +660,7 @@
         "og_title": "Technical SEO Audit Template 2025",
         "og_description": "A no-fluff audit flow you can reuse for every site.",
         "og_image": "/api/blog-image?title=Technical%20SEO%20Audit%20Template%202025",
-        "og_url": "https://trxsolutions.in/blog/technical-seo-audit-template-2025",
+        "og_url": "https://trxsol.com/blog/technical-seo-audit-template-2025",
         "og_type": "article"
       },
       "twitter": {
@@ -674,7 +674,7 @@
       "date_published": "2025-08-24",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer & SEO Specialist (India), technical audits & growth." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Technical SEO Audit Template 2025: Step-by-Step Checklist",
@@ -706,9 +706,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Technical SEO Audit Template 2025: Step-by-Step Checklist",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Technical%20SEO%20Audit%20Template%202025" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Technical%20SEO%20Audit%20Template%202025" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-24",
       "dateModified": "2025-08-24",
       "description": "A reusable technical SEO audit SOP for 2025."
@@ -716,9 +716,9 @@
   },
   {
     "meta": {
-      "meta_title": "Content Strategy for 2025: Topic Clusters, Entities & AI Briefs | TRX Solutions",
+      "meta_title": "Content Strategy for 2025: Topic Clusters, Entities & AI Briefs | TRX Sol",
       "meta_description": "Plan a 2025-ready content strategy with topic clusters, entity coverage, search intent mapping, and AI-assisted briefs that rank.",
-      "canonical_url": "https://trxsolutions.in/blog/content-strategy-2025-topic-clusters",
+      "canonical_url": "https://trxsol.com/blog/content-strategy-2025-topic-clusters",
       "robots": "index,follow"
     },
     "seo": {
@@ -733,7 +733,7 @@
         "og_title": "Content Strategy for 2025: Topic Clusters, Entities & AI Briefs",
         "og_description": "From SERP analysis to entity coverage—build clusters that win.",
         "og_image": "/api/blog-image?title=Content%20Strategy%202025%20Topic%20Clusters",
-        "og_url": "https://trxsolutions.in/blog/content-strategy-2025-topic-clusters",
+        "og_url": "https://trxsol.com/blog/content-strategy-2025-topic-clusters",
         "og_type": "article"
       },
       "twitter": {
@@ -747,7 +747,7 @@
       "date_published": "2025-08-24",
       "date_modified": "2025-08-24",
       "author": { "name": "Ritesh Kumar", "bio": "Full Stack Developer & SEO Specialist (India), content systems & growth." },
-      "publisher": { "name": "TRX Solutions", "logo": "/images/logo.png" }
+      "publisher": { "name": "TRX Sol", "logo": "/images/logo.png" }
     },
     "page_info": {
       "h1": "Content Strategy for 2025: Topic Clusters, Entities & AI Briefs",
@@ -779,9 +779,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Content Strategy for 2025: Topic Clusters, Entities & AI Briefs",
-      "image": [ "https://trxsolutions.in/api/blog-image?title=Content%20Strategy%202025%20Topic%20Clusters" ],
+      "image": [ "https://trxsol.com/api/blog-image?title=Content%20Strategy%202025%20Topic%20Clusters" ],
       "author": { "@type": "Person", "name": "Ritesh Kumar" },
-      "publisher": { "@type": "Organization", "name": "TRX Solutions", "logo": { "@type": "ImageObject", "url": "https://trxsolutions.in/images/logo.png" } },
+      "publisher": { "@type": "Organization", "name": "TRX Sol", "logo": { "@type": "ImageObject", "url": "https://trxsol.com/images/logo.png" } },
       "datePublished": "2025-08-24",
       "dateModified": "2025-08-24",
       "description": "A 2025-ready content strategy playbook for clusters and entities."

@@ -55,10 +55,14 @@ export async function POST(request) {
 <body style="margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #000000;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
         <!-- Header -->
-        <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 30px; text-align: center;">
-            <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin-bottom: 15px;">
-            <h1 style="color: white; margin: 0; font-size: 24px;">🌟 New Website Inquiry</h1>
-            <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">TRX Sol Web Development</p>
+        <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 0; text-align: center;">
+            <div style="background: #fff; padding: 24px 0 10px 0; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin-bottom: 0;">
+            </div>
+            <div style="padding: 20px 30px 10px 30px;">
+                <h1 style="color: white; margin: 0; font-size: 24px;">🌟 New Website Inquiry</h1>
+                <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">TRX Sol Web Development</p>
+            </div>
         </div>
         
         <!-- Content -->
@@ -142,10 +146,14 @@ export async function POST(request) {
 <body style="margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #000000;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #111111; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
         <!-- Header with Logo Area -->
-        <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 40px 30px; text-align: center;">
-            <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin: 0 auto 20px;">
-            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">Thank You!</h1>
-            <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">We've received your inquiry</p>
+        <div style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%); padding: 0; text-align: center;">
+            <div style="background: #fff; padding: 32px 0 12px 0; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <img src="https://trxsol.com/logo.png" alt="TRX Sol Logo" style="width: 120px; height: auto; margin: 0 auto;">
+            </div>
+            <div style="padding: 28px 30px 10px 30px;">
+                <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">Thank You!</h1>
+                <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">We've received your inquiry</p>
+            </div>
         </div>
 
         <!-- Main Content -->
