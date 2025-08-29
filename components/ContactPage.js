@@ -58,17 +58,17 @@ export default function ContactPage() {
                     <p className="text-white font-semibold">Call Us</p>
                     <div className="text-trx-cyan">
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919315996085"
                         className="hover:underline block"
                       >
-                        +91 98765 43210 (India)
+                        +91 9315996085 (India)
                       </a>
-                      <a
+                      {/* <a
                         href="tel:+15551234567"
                         className="hover:underline block"
                       >
                         +1 (555) 123-4567 (USA)
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-white font-semibold">WhatsApp</p>
                     <a
-                      href="https://wa.me/919876543210"
+                      href="https://wa.me/919315996085"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-trx-cyan hover:underline"
@@ -93,10 +93,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-white font-semibold">Email</p>
                     <a
-                      href="mailto:hello@trxsol.com"
+                      href="mailto:trxsol25@gmail.com"
                       className="text-trx-cyan hover:underline"
                     >
-                      hello@trxsol.com
+                      trxsol25@gmail.com
                     </a>
                   </div>
                 </div>

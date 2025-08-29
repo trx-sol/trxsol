@@ -10,20 +10,20 @@ export default function FloatingBottomBar() {
 
   const phoneNumbers = [
     {
-      number: "+919876543210",
+      number: "+919315996085",
       office: "India Office",
       location: "Delhi NCR, Uttam Nagar",
     },
-    { number: "+15551234567", office: "USA Office", location: "New York, NY" },
+    // { number: "+15551234567", office: "USA Office", location: "New York, NY" },
   ];
 
   const whatsAppNumbers = [
     {
-      number: "+919876543210",
+      number: "+919315996085",
       office: "India Office",
       location: "Delhi NCR, Uttam Nagar",
     },
-    { number: "+15551234567", office: "USA Office", location: "New York, NY" },
+    // { number: "+15551234567", office: "USA Office", location: "New York, NY" },
   ];
 
   const handleCallClick = () => {

@@ -42,7 +42,7 @@ export default function Footer() {
     { name: "Twitter", icon: Twitter, href: "#" },
     { name: "LinkedIn", icon: Linkedin, href: "#" },
     { name: "GitHub", icon: Github, href: "#" },
-    { name: "Email", icon: Mail, href: "mailto:hello@trxsol.com" },
+    { name: "Email", icon: Mail, href: "mailto:trxsol25@gmail.com" },
   ];
 
   const handleCallClick = (phoneNumber, office) => {
@@ -73,10 +73,10 @@ export default function Footer() {
             </p>
 
             {/* Contact Numbers */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-8 sm:mb-12">
+            <div className="grid grid-cols-1  gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-8 sm:mb-12">
               <div
                 className="bg-black/60 backdrop-blur-sm border-2 border-trx-purple/40 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:border-trx-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105"
-                onClick={() => handleCallClick("+919876543210", "India Office")}
+                onClick={() => handleCallClick("+919315996085", "India Office")}
               >
                 <div className="flex items-center justify-center mb-3 sm:mb-4 lg:mb-6">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-trx-purple to-trx-cyan rounded-xl sm:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
@@ -87,7 +87,7 @@ export default function Footer() {
                   India Office
                 </h3>
                 <p className="text-trx-cyan font-bold text-xl sm:text-2xl lg:text-3xl mb-1 sm:mb-2 text-center">
-                  +91 98765 43210
+                  +91 93159 96085
                 </p>
                 <p className="text-gray-400 text-sm sm:text-base lg:text-lg text-center">
                   Delhi NCR, Uttam Nagar
@@ -97,7 +97,7 @@ export default function Footer() {
                 </p>
               </div>
 
-              <div
+              {/* <div
                 className="bg-black/60 backdrop-blur-sm border-2 border-trx-purple/40 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:border-trx-cyan/60 transition-all duration-300 group cursor-pointer transform hover:scale-105"
                 onClick={() => handleCallClick("+15551234567", "USA Office")}
               >
@@ -118,7 +118,7 @@ export default function Footer() {
                 <p className="text-trx-cyan text-xs sm:text-sm mt-1 sm:mt-2 font-medium text-center">
                   Click to call
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* CTA Buttons */}
@@ -131,7 +131,7 @@ export default function Footer() {
                 <ArrowRight className="w-6 h-6 ml-3" />
               </Link>
               <a
-                href="mailto:hello@trxsol.com"
+                href="mailto:trxsol25@gmail.com"
                 className="inline-flex items-center justify-center px-10 py-5 border-2 border-trx-purple/40 text-white hover:bg-trx-purple/10 hover:border-trx-cyan/60 font-bold rounded-2xl transition-all duration-300 text-xl"
               >
                 <Mail className="w-6 h-6 mr-3" />
@@ -162,7 +162,7 @@ export default function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex items-center text-gray-400 hover:text-white transition-colors group">
                 <Mail className="w-4 h-4 mr-3 flex-shrink-0 group-hover:text-trx-cyan" />
-                <span className="text-sm">hello@trxsol.com</span>
+                <span className="text-sm">trxsol25@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-400 hover:text-white transition-colors group">
                 <MapPin className="w-4 h-4 mr-3 flex-shrink-0 group-hover:text-trx-cyan" />

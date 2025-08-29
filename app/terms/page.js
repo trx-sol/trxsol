@@ -91,10 +91,10 @@ export default function TermsOfService() {
                 <p className="text-gray-300 mb-6">
                   For questions about these terms, contact us at{" "}
                   <a
-                    href="mailto:hello@trxsol.com"
+                    href="mailto:trxsol25@gmail.com"
                     className="text-trx-cyan hover:underline"
                   >
-                    hello@trxsol.com
+                    trxsol25@gmail.com
                   </a>
                 </p>
 

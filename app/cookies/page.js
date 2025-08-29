@@ -97,10 +97,10 @@ export default function CookiePolicy() {
                 <p className="text-gray-300 mb-6">
                   If you have questions about our Cookie Policy, contact us at{" "}
                   <a
-                    href="mailto:hello@trxsol.com"
+                    href="mailto:trxsol25@gmail.com"
                     className="text-trx-cyan hover:underline"
                   >
-                    hello@trxsol.com
+                    trxsol25@gmail.com
                   </a>
                 </p>
 
