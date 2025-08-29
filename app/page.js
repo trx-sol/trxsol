@@ -6,7 +6,6 @@ import RecentProjectsSection from "@/components/RecentProjectsSection";
 import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ClientLogosSlider from "@/components/ClientLogosSlider";
-import BlogPreviewSection from "@/components/BlogPreviewSection";
 
 export const metadata = {
   title:
@@ -91,7 +90,6 @@ export default function Home() {
       <FAQSection />
       <TestimonialsSection />
       <ClientLogosSlider />
-      {/* <BlogPreviewSection /> */}
     </main>
   );
 }
