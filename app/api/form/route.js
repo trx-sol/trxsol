@@ -4,10 +4,10 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
     try {
         const emailConfig = {
-            fromEmail: process.env.NEXT_PUBLIC_FROM_EMAIL || "your-email@example.com",
-            smtpHost: process.env.NEXT_PUBLIC_SMTP_HOST || "smtp.gmail.com",
-            smtpUser: process.env.NEXT_PUBLIC_SMTP_USER || "your-email@gmail.com",
-            smtpPassword: process.env.NEXT_PUBLIC_SMTP_PASSWORD || "your-password",
+            fromEmail: process.env.NEXT_PUBLIC_FROM_EMAIL,
+            smtpHost: process.env.NEXT_PUBLIC_SMTP_HOST,
+            smtpUser: process.env.NEXT_PUBLIC_SMTP_USER,
+            smtpPassword: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
             domain: process.env.NEXT_PUBLIC_DOMAIN || "https://trxsol.com",
         };
 
